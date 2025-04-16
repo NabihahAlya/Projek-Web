@@ -1,0 +1,128 @@
+/* ----------------NAVBAR------------
+------------------------------------*/
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;
+  padding: 10px 10px;
+  box-shadow: 0 4px 12px rgb(224, 106, 10);
+  border-bottom: 2px solid #f1780f;
+  background: linear-gradient(90deg, #000000, #542903);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+  font-size: larger;
+  height: 80px;
+}
+
+nav img {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li i {
+  margin-right: 8px;
+}
+
+.navi {
+  position: relative;
+  padding-bottom: 8px;
+  border-bottom: none;
+  transition: color 0.1s ease;
+}
+
+.navi::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 4px;
+  background: #f1780f;
+  transition: width 0.3s ease;
+}
+
+.navi:hover::after {
+  width: 100%;
+}
+
+.navi:hover {
+  color: #f1780f;
+}
+
+/* ----------------body------------
+------------------------------------*/
+.tampilan img {
+  width: 100%;
+  opacity: 50%;
+  /* max-height: 60vh;
+  object-fit: cover; */
+}
+
+/* ---------------Footer------------
+------------------------------------*/
+.footer {
+  background: linear-gradient(90deg, #000000, #542903);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  color: #f1780f;
+  text-decoration: underline;
+}
+
+.footer-address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+footer h6 {
+  color: #ffffff;
+}
+
+.map-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
