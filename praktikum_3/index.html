@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Pengumpulan Data Diri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form class="form-box" method="POST" action="proses.php">
+      <h2>Form Pengumpulan Data Diri</h2>
+
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required placeholder="Jeckie Chan">
+
+      <label for="nis">NIS/NISN:</label>
+      <input type="text" id="nis" name="nis" required placeholder="12212">
+
+      <label for="kelas">Kelas:</label>
+      <select id="kelas" name="kelas" required>
+        <option value="">Pilih Kelas</option>
+        <option value="12">Kelas 12</option>
+        <option value="11">Kelas 11</option>
+        <option value="10">Kelas 10</option>
+      </select>
+
+      <label for="tanggal">Tanggal Lahir:</label>
+      <input type="date" id="tanggal" name="tanggal_lahir" required>
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="2" required placeholder="Jalan Nusantara"></textarea>
+
+      <label for="telepon">Nomor Telepon/HP:</label>
+      <input type="tel" id="telepon" name="no_hp" required placeholder="087878723233">
+
+      <button type="submit" class="btn-submit">Kirim Data</button>
+      <button type="button" class="btn-secondary" onclick="location.href='tampil.php'">Lihat Data</button>
+    </form>
+  </div>
+</body>
+</html>
