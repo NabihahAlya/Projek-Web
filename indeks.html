@@ -5,37 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <title>Helios</title>
   </head>
   <body>
-
-    <nav>
-      <div>
-        <img src="pic/logo1.png" alt="logo" />
+    <header>
+      <div class="header">
+        <img src="pic/logo_wt_name.png" alt="logo" />
+        <p>Helios Hotel Malang</p>
       </div>
-
+      <div class="header-img">
+        <img src="pic/kamarhelios.jpeg" alt="Helios" />
+        <div class="hero-text">
+          <h1>Selamat Datang di Helios Hotel Malang</h1>
+          <p>Experience luxury and comfort in the heart of Malang City.</p>
+        </div>
+        <!-- <div class="container">
+          <div class="box location">
+              <h3>Temukan Kami</h3>
+              <i class="fa-solid fa-location-dot"></i>
+          </div>
+          
+          <div class="box">
+              <h3>Ikuti kami di</h3>
+              <div class="social-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-tiktok"></i>
+              </div>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <nav>
       <ul>
-        <li class="navi"><i class="fa-solid fa-house"></i></i>Beranda</li>
+        <li class="navi"><i class="fa-solid fa-house"></i>Beranda</li>
         <li class="navi"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</li>
-        <li class="navi"><i class="fa-solid fa-hotel"></i>Kamar & Fasilitas</li>
+        <li class="navi"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</li>
+        <li class="navi"><i class="fa-solid fa-hotel"></i>Kamar</li>
         <li class="navi"><i class="fa-solid fa-tty"></i>Hubungi Kami</li>
-        <li class="navi"><i class="fa-solid fa-user"></i></li>~
+        <li class="navi"><i class="fa-solid fa-user"></i></li>
       </ul>
     </nav>
 
-    <div class="tampilan">
-      <img src="pic/kamarhelios1.jpeg" alt="Helios" />
-    </div>
+    <section class="fasilitas">
+      <h2>Fasilitas</h2>
+      <div class="daftar-fasilitas">
+        <div class="fasilitas-item">
+          <i class="fas fa-map-marker-alt fa-3x"></i>
+          <h3>Lokasi Strategis</h3>
+          <p>Terletak di dekat Stasiun Malang dan berbagai destinasi wisata populer di Malang, memudahkan perjalanan Anda selama di Kota Malang.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-bed fa-3x"></i>
+          <h3>Kamar Nyaman dan Modern</h3>
+          <p>Kamar-kamar elegan dengan desain interior yang menawan.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-utensils fa-3x"></i>
+          <h3>Restoran & Kafe</h3>
+          <p>Menyajikan hidangan lezat, mulai dari kuliner lokal hingga internasional.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-users fa-3x"></i>
+          <h3>Fasilitas Pertemuan & Acara</h3>
+          <p>Ruang pertemuan modern, ideal untuk acara bisnis dan sosial.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-wifi fa-3x"></i>
+          <h3>Wi-Fi Gratis</h3>
+          <p>Akses internet berkecepatan tinggi di seluruh area hotel.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-dumbbell fa-3x"></i>
+          <h3>Pusat Kebugaran</h3>
+          <p>Tetap bugar selama perjalanan dengan fasilitas pusat kebugaran kami.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-parking fa-3x"></i>
+          <h3>Area Parkir</h3>
+          <p>Area Parkir yang luas dan aman.</p>
+        </div>
+        <div class="fasilitas-item">
+          <i class="fas fa-tshirt fa-3x"></i>
+          <h3>Layanan Laundry</h3>
+          <p>Layanan Laundry yang cepat dan bersih.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-kamar">
+      <h2>Pilihan Kamar</h2>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="card-kamar">
+            <img src="pic/kamarhelios1.jpeg" alt="Kamar Superior" />
+            <h3>Superior</h3>
+            <a href="#">Lihat Detail</a>
+          </div>
+          <div class="card-kamar">
+            <img src="pic/kamarhelios1.jpeg" alt="Kamar Deluxe" />
+            <h3>Deluxe</h3>
+            <a href="#">Lihat Detail</a>
+          </div>
+          <div class="card-kamar">
+            <img src="pic/kamarhelios1.jpeg" alt="Kamar Keluarga" />
+            <h3>Kamar Keluarga</h3>
+            <a href="#">Lihat Detail</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer pt-5 pb-5">
       <div class="container">
         <div class="row align-items-start">
           <div class="col-md-3 text-center text-md-start mb-4 mb-md-0">
-            <img src="pic/logo1.png" alt="Helios Hotel Logo" class="footer-logo">
+            <img src="pic/logo1.png" alt="Helios Hotel Logo" class="footer-logo" />
           </div>
-    
+
           <div class="col-md-2 mb-4 mb-md-0">
             <ul class="footer-menu list-unstyled">
               <li><a href="#">Beranda</a></li>
@@ -45,17 +133,17 @@
               <li><a href="#">Login</a></li>
             </ul>
           </div>
-          
+
           <div class="col-md-4 mb-4 mb-md-0">
             <p class="footer-address">
-              <strong>Helios Hotel Malang</strong><br>
-              Jl. Patimura No. 37, Klojen<br>
-              Kota Malang, Jawa Timur 65111, Indonesia<br>
-              (0341) 362741, 0812 1111 5787<br>
+              <strong>Helios Hotel Malang</strong><br />
+              Jl. Patimura No. 37, Klojen<br />
+              Kota Malang, Jawa Timur 65111, Indonesia<br />
+              (0341) 362741, 0812 1111 5787<br />
               marketing.helios58@gmail.com
             </p>
           </div>
-    
+
           <div class="col-md-3">
             <h6 class="text-uppercase mb-3">Lokasi Kami</h6>
             <div class="map-wrapper">
@@ -64,29 +152,29 @@
                 <script>
                   (function () {
                     var setting = {
-                      "query": "Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111, Indonesia",
-                      "width": "100%",
-                      "height": 200,
-                      "satellite": false,
-                      "zoom": 13,
-                      "placeId": "ChIJfa0B9joo1i0RV1WXk-MOg10",
-                      "cid": "0x5d830ee393975557",
-                      "coords": [-7.973071799999999, 112.6347548],
-                      "cityUrl": "/indonesia/malang-39952",
-                      "lang": "id",
-                      "queryString": "Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111, Indonesia",
-                      "centerCoord": [-7.973071799999999, 112.6347548],
-                      "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                      "embed_id": "1213563"
+                      query: "Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111, Indonesia",
+                      width: "100%",
+                      height: 200,
+                      satellite: false,
+                      zoom: 13,
+                      placeId: "ChIJfa0B9joo1i0RV1WXk-MOg10",
+                      cid: "0x5d830ee393975557",
+                      coords: [-7.973071799999999, 112.6347548],
+                      cityUrl: "/indonesia/malang-39952",
+                      lang: "id",
+                      queryString: "Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111, Indonesia",
+                      centerCoord: [-7.973071799999999, 112.6347548],
+                      id: "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                      embed_id: "1213563",
                     };
                     var d = document;
-                    var s = d.createElement('script');
-                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=1213563';
+                    var s = d.createElement("script");
+                    s.src = "https://1map.com/js/script-for-user.js?embed_id=1213563";
                     s.async = true;
                     s.onload = function (e) {
-                      window.OneMap.initMap(setting)
+                      window.OneMap.initMap(setting);
                     };
-                    var to = d.getElementsByTagName('script')[0];
+                    var to = d.getElementsByTagName("script")[0];
                     to.parentNode.insertBefore(s, to);
                   })();
                 </script>
@@ -98,4 +186,3 @@
     </footer>
   </body>
 </html>
-
