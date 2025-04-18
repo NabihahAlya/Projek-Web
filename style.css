@@ -99,6 +99,7 @@ nav {
   background: #ffffff;
   font-family: "Segoe UI", sans-serif;
   margin: 0;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 12px rgba(77, 62, 50, 0.5);
@@ -118,6 +119,11 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   font-size: larger;
+}
+
+nav a {
+  color: #733d0e;
+  text-decoration: none;
 }
 
 nav ul li i {
@@ -148,6 +154,57 @@ nav ul li i {
 
 .navi:hover {
   color: #f1780f;
+  cursor: pointer;
+}
+
+/* -----------------tentang kami----------- */
+
+.judul {
+  text-align: center;
+}
+
+.tentang-kami-container {
+  display: flex;
+  max-width: 1300px;
+  margin: 30px auto;
+  padding: 0 40px;
+}
+
+.left {
+  width: 50%;
+  padding-right: 40px;
+  border-right: 1px solid #ccc;
+}
+
+.right {
+  width: 50%;
+  padding-left: 40px;
+  text-align: justify;
+}
+
+.contact p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-left: 5px;
+}
+
+.contact i {
+  margin-right: 18px;
+  color: #661f1f;
+}
+
+.contact a {
+  color: #661f1f;
+  text-decoration: none;
+}
+
+.desc p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 60px auto;
+  margin-bottom: 13px;
+  margin-top: 0;  
 }
 
 /* -----------------fasilitas----------- */
