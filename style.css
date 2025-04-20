@@ -270,6 +270,12 @@ section.section-kamar {
   background-color: rgba(247, 245, 243, 0.5);
 }
 
+/* --------------------Our Best Service--------------------- */
+section.section-best {
+  padding: 2em;
+  background-color: rgba(247, 245, 243, 0.5);
+  padding-bottom: 3em;
+}
 /* ---------------Footer------------
 ------------------------------------*/
 .footer {

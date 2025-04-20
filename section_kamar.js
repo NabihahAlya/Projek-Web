@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let autoSlideInterval;
     let imageCarousels = [];
-    const imageSlideInterval = 3000; // 3 seconds between image slides
-    const cardSlideInterval = 5000;  // 5 seconds between card slides
+    const imageSlideInterval = 1500; // 3 seconds between image slides
+    const cardSlideInterval = 4500;  // 5 seconds between card slides
     
     // Initialize Bootstrap carousels for images and store instances
     document.querySelectorAll('.image-carousel').forEach(carouselEl => {

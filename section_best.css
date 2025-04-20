@@ -1,0 +1,71 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  .bg-image-main {
+    color: white;
+    background-image: url('pic/bromo.jpg'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-image-1 {
+    color: white;
+    background-image: url('pic/tumpak-sewu.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-image-2 {
+    color: white;
+    background-image: url('pic/ijen.jpg'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    background-size: cover;
+    background-position: center;
+  }
+
+  .segoe {
+    font-family: Segoe Print;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  /* Kelas untuk animasi */
+  .animate-fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease;
+  }
+  
+  .animate-slide-left {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .animate-slide-right {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  /* Kelas yang ditambahkan saat elemen terlihat */
+  .fade-in-visible {
+    opacity: 1;
+  }
+  
+  .slide-left-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slide-right-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
