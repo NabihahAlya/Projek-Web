@@ -212,7 +212,6 @@ nav ul li i {
 .fasilitas {
   padding: 2em;
   text-align: center;
-  background-color: rgba(247, 245, 243, 0.5);
 }
 
 .daftar-fasilitas {
@@ -236,69 +235,9 @@ nav ul li i {
 }
 
 /* --------------------kamar--------------------- */
-.section-kamar {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.section-kamar h2 {
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.carousel-container {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.carousel {
-  display: flex;
-  gap: 20px;
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  cursor: grab;
-}
-
-.carousel.dragging {
-  cursor: grabbing;
-}
-
-.card-kamar {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px #733d0e;
-  min-width: 300px;
-  text-align: center;
-  padding: 20px;
-  z-index: 1;
-}
-
-.card-kamar img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.card-kamar h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  color: #333;
-  font-size: large;
-}
-
-.card-kamar a {
-  display: inline-block;
-  color: #733d0e;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.card-kamar a:hover {
-  color: #f1780f;
+section.section-kamar {
+  padding: 2em;
+  background-color: rgba(247, 245, 243, 0.5);
 }
 
 /* ---------------Footer------------
