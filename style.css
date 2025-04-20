@@ -1,6 +1,5 @@
 /* ----------------Header------------
 ------------------------------------*/
-
 *,
 html {
   padding: 0;
@@ -9,9 +8,22 @@ html {
 }
 
 body {
-  padding: 0;
   padding-top: 70px;
   margin: 0;
+}
+
+.header {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  padding: 10px 10px;
+  background: linear-gradient(90deg, #000000, #733d0e);
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
 
 .header img {
@@ -19,14 +31,23 @@ body {
   display: flex;
   align-items: center;
   padding: 10px 10px;
-  margin: 0;
   margin-top: 0;
   padding-right: 0;
+  position: relative;
+}
+
+header p {
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #f1780f;
+  font-weight: bolder;
+  font-size: 28px;
+  margin: 0;
 }
 
 .header-img img {
   opacity: 50%;
-  width: 100%;
   width: 100%;
   height: auto;
   display: block;
@@ -37,7 +58,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
-  z-index: 1000;
+  z-index: 4;
 }
 
 .hero-text {
@@ -69,30 +90,6 @@ body {
   width: 100%;
 }
 
-header p {
-  display: flex;
-  align-items: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #f1780f;
-  font-weight: bolder;
-  font-size: 28px;
-  margin: 0;
-}
-
-.header {
-  display: flex;
-  height: 70px;
-  width: 100%;
-  align-items: center;
-  padding: 10px 10px;
-  background: linear-gradient(90deg, #000000, #733d0e);
-  font-family: "Segoe UI", sans-serif;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  z-index: 1002;
-}
-
 nav {
   display: flex;
   height: 50px;
@@ -108,7 +105,7 @@ nav {
   border-bottom: 2px solid #733d0e;
   position: sticky;
   top: 70px;
-  z-index: 999;
+  z-index: 1;
 }
 
 nav ul {
@@ -163,9 +160,10 @@ nav ul li i {
   position: absolute;
   top: 85%;
   padding: 10px;
-  z-index: 1001;
+  z-index: 5;
   display: flex;
 }
+
 .box-location,
 .box {
   width: 150px;
@@ -175,6 +173,7 @@ nav ul li i {
   padding: 10px;
   justify-items: center;
 }
+
 .box-medsos p {
   font-size: small;
   font-weight: 10px;
