@@ -275,6 +275,22 @@ section.section-best {
   background-color: rgba(247, 245, 243, 0.5);
   padding-bottom: 3em;
 }
+
+.custom-btn {
+  background-color: #f1780f; /* Orange terang */
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+}
+
+.custom-btn:hover {
+  background-color: #f5a623; /* Warna kuning lebih terang */
+  color: #733d0e; /* Teks berwarna coklat tua */
+
+}
+
 /* ---------------Footer------------
 ------------------------------------*/
 .footer {
