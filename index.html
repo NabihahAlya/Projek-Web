@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" />
-=======
     <title>Helios</title>
->>>>>>> 90092325f2a5a7e0dee62b1d095e7cb076fbc3eb
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="section_best.css" />
@@ -20,7 +16,6 @@
         <img src="pic/logo_wt_name.png" alt="logo" />
         <p>Helios Hotel Malang</p>
       </div>
-
       <div class="header-img">
         <img src="pic/kamarhelios.jpeg" alt="Helios" />
         <div class="hero-text">
@@ -42,26 +37,25 @@
         </div>
       </div>
     </header>
-
     <nav>
       <ul>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-house"></i>Beranda</a>
+          <a href="index.html"><i class="fa-solid fa-house"></i>Beranda</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
+          <a href="tentang-kami.html"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
         </li>
         <li class="navi">
           <a href="kamar.html"><i class="fa-solid fa-hotel"></i>Kamar</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
+          <a href="#fasilitas"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fas fa-plane"></i>Wisata</a>
+          <a href="wisata.html"><i class="fas fa-plane"></i>Wisata</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-tty"></i>Hubungi Kami</a>
+          <a href="hubungi-kami.html"><i class="fa-solid fa-tty"></i>Hubungi Kami</a>
         </li>
         <li class="navi">
           <a href="#"><i class="fa-solid fa-user"></i></a>
@@ -223,82 +217,131 @@
           <button class="btn btn-primary" id="startAutoSlide">Start Auto Slide</button>
           <button class="btn btn-danger" id="stopAutoSlide" disabled>Stop Auto Slide</button>
         </div>
-<<<<<<< HEAD
 
         <div class="text-center mt-4">
-          <a href="kamar.html" class="btn btn-outline-primary">Lihat Semua Kamar</a>
+          <a href="kamar.html" class="btn custom-btn">Lihat Semua Kamar</a>
         </div>
-=======
-      
-      <div class="text-center mt-4">
-        <a href="kamar.html" class="btn custom-btn">Lihat Semua Kamar</a>
->>>>>>> 90092325f2a5a7e0dee62b1d095e7cb076fbc3eb
       </div>
     </section>
 
-    <section class="fasilitas">
+    <section id="fasilitas">
       <h2>Fasilitas</h2>
       <div class="daftar-fasilitas">
-        <div class="fasilitas-item">
+        <a
+          href="https://www.google.com/maps/place/Helios+Hotel/@-7.9732008,112.6321189,917m/data=!3m1!1e3!4m9!3m8!1s0x2dd6283af7d660e9:0x4a02fdae42386c63!5m2!4m1!1i2!8m2!3d-7.9732008!4d112.6346938!16s%2Fg%2F1vnnft00?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
+          class="fasilitas-item"
+        >
           <i class="fas fa-map-marker-alt fa-3x"></i>
           <h3>Lokasi Strategis</h3>
-          <p>Terletak di dekat Stasiun Malang dan berbagai destinasi wisata populer di Malang, memudahkan perjalanan Anda selama di Kota Malang.</p>
-        </div>
-        <div class="fasilitas-item">
+          <!-- <p>Terletak di dekat Stasiun Malang dan berbagai destinasi wisata populer di Malang, memudahkan perjalanan Anda selama di Kota Malang.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('popup')">
           <i class="fas fa-bed fa-3x"></i>
           <h3>Kamar Nyaman dan Modern</h3>
-          <p>Kamar-kamar elegan dengan desain interior yang menawan.</p>
-        </div>
-        <div class="fasilitas-item">
+          <!-- <p>Kamar-kamar elegan dengan desain interior yang menawan.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
           <i class="fas fa-utensils fa-3x"></i>
           <h3>Restoran & Kafe</h3>
-          <p>Menyajikan hidangan lezat, mulai dari kuliner lokal hingga internasional.</p>
-        </div>
-        <div class="fasilitas-item">
-          <i class="fas fa-users fa-3x"></i>
-          <h3>Fasilitas Pertemuan & Acara</h3>
-          <p>Ruang pertemuan modern, ideal untuk acara bisnis dan sosial.</p>
-        </div>
-        <div class="fasilitas-item">
-          <i class="fas fa-wifi fa-3x"></i>
-          <h3>Wi-Fi Gratis</h3>
-          <p>Akses internet berkecepatan tinggi di seluruh area hotel.</p>
-        </div>
-        <div class="fasilitas-item">
+          <!-- <p>Menyajikan hidangan lezat, mulai dari kuliner lokal hingga internasional.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
           <i class="fas fa-dumbbell fa-3x"></i>
           <h3>Pusat Kebugaran</h3>
-          <p>Tetap bugar selama perjalanan dengan fasilitas pusat kebugaran kami.</p>
-        </div>
-        <div class="fasilitas-item">
+          <!-- <p>Tetap bugar selama perjalanan dengan fasilitas pusat kebugaran kami.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
           <i class="fas fa-parking fa-3x"></i>
           <h3>Area Parkir</h3>
-          <p>Area Parkir yang luas dan aman.</p>
-        </div>
-        <div class="fasilitas-item">
+          <!-- <p>Area Parkir yang luas dan aman.</p> -->
+        </a>
+      </div>
+      <h2>Layanan</h2>
+      <div class="daftar-layanan">
+        <a href="javascript:void(0)" class="layanan-item" onclick="openPopup('')">
           <i class="fas fa-tshirt fa-3x"></i>
-          <h3>Layanan Laundry</h3>
-          <p>Layanan Laundry yang cepat dan bersih.</p>
-        </div>
+          <h3>Laundry</h3>
+          <!-- <p>Terletak di dekat Stasiun Malang dan berbagai destinasi wisata populer di Malang, memudahkan perjalanan Anda selama di Kota Malang.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="layanan-item" onclick="openPopup('')">
+          <i class="fas fa-motorcycle fa-3x"></i>
+          <h3>Sewa Motor dan Mobil</h3>
+          <!-- <p>Kamar-kamar elegan dengan desain interior yang menawan.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="layanan-item" onclick="openPopup('')">
+          <i class="fas fa-warehouse fa-3x"></i>
+          <h3>Sewa Rooftop</h3>
+          <!-- <p>Menyajikan hidangan lezat, mulai dari kuliner lokal hingga internasional.</p> -->
+        </a>
+        <a href="javascript:void(0)" class="layanan-item" onclick="openPopup('wisata')">
+          <i class="fas fa-map-signs fa-3x"></i>
+          <h3>Wisata</h3>
+          <!-- <p>Tetap bugar selama perjalanan dengan fasilitas pusat kebugaran kami.</p> -->
+        </a>
       </div>
     </section>
+    <div class="pop-up" id="popup">
+      <div class="box-pop-up">
+        <i class="fas fa-times close-icon" onclick="closePopup('popup')"></i>
+
+        <div class="carousel-container">
+          <button class="carousel-btn prev" onclick="prevSlide('carouselSlide1')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-slide" id="carouselSlide1">
+            <img src="assets/img/deluxe room.jpg" alt="Foto 1" />
+            <img src="assets/img/executive room (3).jpg" alt="Foto 2" />
+            <img src="assets/img/family room (1).jpg" alt="Foto 3" />
+          </div>
+          <button class="carousel-btn next" onclick="nextSlide('carouselSlide1')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="popup-detail">
+          <h3>Kamar Nyaman dan Modern</h3>
+          <p>Kamar-kamar elegan dengan desain interior yang menawan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop-up" id="wisata">
+      <div class="box-pop-up">
+        <i class="fas fa-times close-icon" onclick="closePopup('wisata')"></i>
+
+        <div class="carousel-container">
+          <button class="carousel-btn prev" onclick="prevSlide('carouselSlide2')">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="carousel-slide" id="carouselSlide2">
+            <img src="assets/img/bm.jpeg" alt="Foto 1" />
+            <img src="assets/img/ts.jpeg" alt="Foto 2" />
+            <img src="assets/img/ijen (1).jpeg" alt="Foto 3" />
+          </div>
+          <button class="carousel-btn next" onclick="nextSlide('carouselSlide2')">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="popup-detail">
+          <h3>Wisata</h3>
+          <p>Jelajahi keindahan kota dengan berbagai pilihan wisata menarik yang kami tawarkan, menjadikan perjalanan Anda lebih berkesan.</p>
+        </div>
+      </div>
+    </div>
 
     <section class="section-best">
-      <h2 class="judul">Our Best Service</h2>
+      <h2 class="judul">Penawaran Terbaik</h2>
       <div class="container py-4">
         <!-- Jumbotron utama dengan animasi fade-in -->
         <div class="p-5 mb-4 bg-light rounded-3 bg-image-main animate-fade-in" id="jumbotron">
           <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold segoe">Wonderful</h1>
-            <h1 class="display-5 fw-bold segoe">BROMO</h1>
-            <h1 class="display-5 fw-bold">HELIOS HOTEL</h1>
-            <p class="col-md-8 fs-4">
+            <h1 class="display-3 fw-bold segoe">Wonderful BROMO</h1>
+            <h1 class="display-3 fw-bold">HELIOS HOTEL</h1>
+            <p class="col-md-6 fs-5">
               "Rasakan Keajaiban Bromo, Dapatkan Pengalaman Tak Terlupakan!" <br />Ingin merasakan sensasi matahari terbit di Bromo? Bergabunglah dalam perjalanan penuh petualangan dan nikmati keindahan alam yang memukau. Jangan lewatkan
               kesempatan untuk menjelajahi keajaiban Indonesia!
             </p>
-            <button class="btn btn-primary btn-lg" type="button">Lihat Selengkapnya</button>
-            <h1 class="display-3 fw-bold segoe">Wonderful BROMO</h1>
-            <h1 class="display-3 fw-bold">HELIOS HOTEL</h1>
-            <p class="col-md-6 fs-5">"Rasakan Keajaiban Bromo, Dapatkan Pengalaman Tak Terlupakan!" <br>Ingin merasakan sensasi matahari terbit di Bromo? Bergabunglah dalam perjalanan penuh petualangan dan nikmati keindahan alam yang memukau. Jangan lewatkan kesempatan untuk menjelajahi keajaiban Indonesia!</p>
             <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
           </div>
         </div>
@@ -316,11 +359,6 @@
           <div class="col-md-6">
             <div class="h-90 p-5 bg-light border rounded-3 bg-image-2 animate-slide-left" id="card-right">
               <h2 class="segoe">Explore Ijen Blue Fire</h2>
-              <p>
-                Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for
-                equal-height.
-              </p>
-              <button class="btn btn-primary btn-sml" type="button">Lihat Selengkapnya</button>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit architecto optio veritatis aut iusto aspernatur expedita quasi illo aliquam incidunt quidem voluptatem reprehenderit ullam ea quia doloribus!</p>
               <button class="btn btn-sml custom-btn" type="button">Lihat Selengkapnya</button>
             </div>

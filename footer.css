@@ -1,0 +1,48 @@
+.footer {
+  background: linear-gradient(90deg, #000000, #733d0e);
+  font-family: "Segoe UI", sans-serif;
+}
+.footer .container {
+  width: 75%;
+}
+.footer-logo {
+  max-width: 150px;
+}
+
+.footer-menu li {
+  margin-bottom: 8px;
+}
+
+.footer-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  color: #f1780f;
+  text-decoration: underline;
+}
+
+.footer-address {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.footer-address i {
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 0px;
+}
+
+footer h6 {
+  color: #ffffff;
+}
+
+.map-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

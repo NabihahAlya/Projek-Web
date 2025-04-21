@@ -1,82 +1,76 @@
 .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
 
-  .bg-image-main {
-    background: 
-        linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */
-        url('pic/bromo.jpg') no-repeat right center; /* Gambar di sisi kanan */
-    background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
-    background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
-    color: white;
-  }
+.bg-image-main {
+  background: linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */ url("pic/bromo.jpg") no-repeat right center; /* Gambar di sisi kanan */
+  background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
+  background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
+  color: white;
+}
 
-  .bg-image-1 {
-    background: 
-        linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */
-        url('pic/tumpak-sewu.jpg') no-repeat right center; /* Gambar di sisi kanan */
-    background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
-    background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
-    color: white;
-  }
+.bg-image-1 {
+  background: linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */ url("pic/tumpak-sewu.jpg") no-repeat right center; /* Gambar di sisi kanan */
+  background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
+  background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
+  color: white;
+}
 
-  .bg-image-2 {
-    background: 
-        linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */
-        url('pic/ijen.jpg') no-repeat right center; /* Gambar di sisi kanan */
-    background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
-    background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
-    color: white;
-  }
+.bg-image-2 {
+  background: linear-gradient(to right, #4e2909, rgba(255, 255, 255, 0)), /* Gradasi warna dari orange terang ke transparan */ url("pic/ijen.jpg") no-repeat right center; /* Gambar di sisi kanan */
+  background-size: cover; /* Membuat gambar menyesuaikan ukuran layar */
+  background-position: left center, right center; /* Menempatkan gambar di sebelah kanan */
+  color: white;
+}
 
-  #jumbotron {
-    padding: 0px 28px 0px 28px !important;
-    height: 500px;
-  }
+#jumbotron {
+  padding: 0px 28px 0px 28px !important;
+  height: 500px;
+}
 
-  .segoe {
-    font-family: Segoe Print;
-  }
+.segoe {
+  font-family: Segoe Print;
+}
 
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
+}
 
-  /* Kelas untuk animasi */
-  .animate-fade-in {
-    opacity: 0;
-    transition: opacity 1.5s ease;
-  }
-  
-  .animate-slide-left {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .animate-slide-right {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  /* Kelas yang ditambahkan saat elemen terlihat */
-  .fade-in-visible {
-    opacity: 1;
-  }
-  
-  .slide-left-visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  .slide-right-visible {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Kelas untuk animasi */
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Kelas yang ditambahkan saat elemen terlihat */
+.fade-in-visible {
+  opacity: 1;
+}
+
+.slide-left-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
