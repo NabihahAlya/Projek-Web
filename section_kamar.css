@@ -1,7 +1,7 @@
 /* Gambar dalam carousel */
 .carousel-inner img {
     width: 100%;        /* Gambar akan menyesuaikan dengan lebar container */
-    height: 200px;      /* Menentukan tinggi gambar */
+    height:270px;      /* Menentukan tinggi gambar */
     object-fit: cover;  /* Agar gambar terpotong dengan baik */
 }
 
