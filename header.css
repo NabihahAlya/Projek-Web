@@ -1,3 +1,4 @@
+/* Base styles */
 *,
 html {
   padding: 0;
@@ -15,7 +16,7 @@ body {
   height: 70px;
   width: 100%;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px;
   background: linear-gradient(90deg, #000000, #733d0e);
   font-family: "Segoe UI", sans-serif;
   margin: 0;
@@ -28,7 +29,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px;
   margin-top: 0;
   padding-right: 0;
   position: relative;
@@ -90,9 +91,9 @@ header p {
 
 nav {
   display: flex;
-  height: 50px;
+  height: auto;
   width: 100%;
-  padding: 10px 10px;
+  padding: 10px;
   background: #ffffff;
   font-family: "Segoe UI", sans-serif;
   margin: 0;
@@ -116,11 +117,16 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   font-size: larger;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: #733d0e;
   text-decoration: none;
+}
+
+nav ul li {
+  padding: 8px 0;
 }
 
 nav ul li i {
@@ -154,32 +160,191 @@ nav ul li i {
   cursor: pointer;
 }
 
+/* Box medsos - always stays in the image */
 .box-medsos {
   position: absolute;
-  top: 85%;
-  padding: 10px;
-  z-index: 5;
   display: flex;
+  z-index: 5;
+  bottom: 20px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .box-location,
 .box {
   width: 150px;
-  height: 50;
+  height: auto;
   background-color: rgba(227, 222, 217, 0.7);
-  margin-right: 10px;
   padding: 10px;
   justify-items: center;
 }
 
 .box-medsos p {
   font-size: small;
-  font-weight: 10px;
   color: #733d0e;
+  margin-bottom: 5px;
 }
 
 .box-medsos i {
   font-size: larger;
-  font-weight: 10px;
   color: #733d0e;
+}
+
+/* Mobile menu toggle */
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  color: #f1780f;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  nav ul {
+    width: 90%;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  /* Position boxes at bottom left and right */
+  .box-medsos {
+    justify-content: space-between;
+    bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  .box-location {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header p {
+    font-size: 22px;
+  }
+  
+  .header img {
+    height: 60px;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+  }
+  
+  nav ul {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  .box-medsos {
+    bottom: 10px;
+  }
+  
+  .box-location, .box {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding-top: 60px;
+  }
+  
+  .header {
+    height: 60px;
+  }
+  
+  .header p {
+    font-size: 18px;
+  }
+  
+  .header img {
+    height: 50px;
+    padding: 5px;
+  }
+  
+  nav {
+    top: 60px;
+    padding: 5px;
+    background: transparent;
+    box-shadow: none;
+    border-bottom: none;
+  }
+  
+  .hamburger-menu {
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(77, 62, 50, 0.5);
+  }
+  
+  nav.mobile-open ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 4px 0;
+    width: 100%;
+  }
+  
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+  
+  .box-medsos {
+    bottom: 5px;
+    padding: 0 5px;
+  }
+  
+  .box-location, .box {
+    width: 100px;
+    padding: 5px;
+  }
+  
+  .box-medsos p {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  
+  .box-medsos i {
+    font-size: 14px;
+  }
+  
+  /* For mobile, display only icon and text without boxes */
+  nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navi::after {
+    display: none;
+  }
 }
