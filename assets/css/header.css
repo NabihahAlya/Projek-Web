@@ -180,6 +180,10 @@ nav ul li i {
   justify-items: center;
 }
 
+.box-location:hover {
+  cursor: pointer;
+}
+
 .box-medsos p {
   font-size: small;
   color: #733d0e;
@@ -191,6 +195,11 @@ nav ul li i {
   color: #733d0e;
 }
 
+.box i {
+  font-size: larger !important;
+  color: #733d0e !important;
+}
+
 /* Mobile menu toggle */
 .hamburger-menu {
   display: none;
@@ -199,6 +208,10 @@ nav ul li i {
   cursor: pointer;
   margin-left: auto;
   padding: 0 15px;
+}
+
+.judul {
+  text-align: center;
 }
 
 /* Responsive styles */

@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <title>Document</title>
-  </head>
-  <body>
     <footer class="footer pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -55,6 +44,10 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/section_best.js"></script>
+    <script src="assets/js/section_kamar.js"></script>
   </body>
 </html>
