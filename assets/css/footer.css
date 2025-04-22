@@ -86,11 +86,11 @@ footer h6 {
   .footer .container {
     width: 95%;
   }
-  
+
   .footer-logo {
     max-width: 120px;
   }
-  
+
   .map-wrapper {
     height: 180px;
   }
@@ -100,25 +100,25 @@ footer h6 {
   .footer {
     text-align: center;
   }
-  
+
   .footer-logo {
     margin-bottom: 20px;
   }
-  
+
   .footer-address {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .footer-address i {
     padding: 5px;
   }
-  
+
   .map-wrapper {
     height: 150px;
     margin-top: 15px;
   }
-  
+
   .footer-menu {
     display: flex;
     flex-direction: column;

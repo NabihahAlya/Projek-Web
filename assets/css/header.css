@@ -219,18 +219,18 @@ nav ul li i {
   nav ul {
     width: 90%;
   }
-  
+
   .hero-text h1 {
     font-size: 2rem;
   }
-  
+
   /* Position boxes at bottom left and right */
   .box-medsos {
     justify-content: space-between;
     bottom: 20px;
     padding: 0 20px;
   }
-  
+
   .box-location {
     margin-right: 0;
   }
@@ -240,35 +240,36 @@ nav ul li i {
   .header p {
     font-size: 22px;
   }
-  
+
   .header img {
     height: 60px;
   }
-  
+
   .hero-text h1 {
     font-size: 1.8rem;
   }
-  
+
   .hero-text p {
     font-size: 1rem;
   }
-  
+
   nav ul {
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
   }
-  
+
   nav ul li {
     margin: 0 10px;
   }
-  
+
   .box-medsos {
     bottom: 10px;
   }
-  
-  .box-location, .box {
+
+  .box-location,
+  .box {
     width: 120px;
   }
 }
@@ -277,20 +278,20 @@ nav ul li i {
   body {
     padding-top: 60px;
   }
-  
+
   .header {
     height: 60px;
   }
-  
+
   .header p {
     font-size: 18px;
   }
-  
+
   .header img {
     height: 50px;
     padding: 5px;
   }
-  
+
   nav {
     top: 60px;
     padding: 5px;
@@ -298,11 +299,11 @@ nav ul li i {
     box-shadow: none;
     border-bottom: none;
   }
-  
+
   .hamburger-menu {
     display: block;
   }
-  
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -313,50 +314,51 @@ nav ul li i {
     border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 12px rgba(77, 62, 50, 0.5);
   }
-  
+
   nav.mobile-open ul {
     display: flex;
   }
-  
+
   nav ul li {
     margin: 4px 0;
     width: 100%;
   }
-  
+
   .hero-text h1 {
     font-size: 1.5rem;
   }
-  
+
   .hero-text p {
     font-size: 0.9rem;
   }
-  
+
   .box-medsos {
     bottom: 5px;
     padding: 0 5px;
   }
-  
-  .box-location, .box {
+
+  .box-location,
+  .box {
     width: 100px;
     padding: 5px;
   }
-  
+
   .box-medsos p {
     font-size: 12px;
     margin-bottom: 2px;
   }
-  
+
   .box-medsos i {
     font-size: 14px;
   }
-  
+
   /* For mobile, display only icon and text without boxes */
   nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .navi::after {
     display: none;
   }
