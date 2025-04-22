@@ -24,9 +24,15 @@
               marketing.helios58@gmail.com
             </p>
             <div class="social-icons">
+            <a href="https://www.instagram.com/heliosmalang" title="Follow Instagram" target="_blank">
               <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6281211115787" title="Hubungi WhatsApp" target="_blank">
               <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.google.com/maps/place/Helios+Hotel/@-7.9732008,112.6321189,917m/data=!3m1!1e3!4m9!3m8!1s0x2dd6283af7d660e9:0x4a02fdae42386c63!5m2!4m1!1i2!8m2!3d-7.9732008!4d112.6346938!16s%2Fg%2F1vnnft00?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" title="Maps" target="_blank">
               <i class="fa-solid fa-location-dot"></i>
+            </a>
             </div>
           </div>
 
