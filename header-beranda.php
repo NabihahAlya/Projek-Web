@@ -45,27 +45,28 @@
     </header>
 
     <nav>
-      <ul>
+    <ul>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-house"></i>Beranda</a>
+          <a href="index.php"><i class="fa-solid fa-house"></i>Beranda</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
+          <a href="tentang-kami.php"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
         </li>
         <li class="navi">
           <a href="kamar.php"><i class="fa-solid fa-hotel"></i>Kamar</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
+          <a href="index.php#fasilitas"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fas fa-plane"></i>Wisata</a>
+          <a href="wisata.php"><i class="fas fa-plane"></i>Wisata</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-tty"></i>Hubungi Kami</a>
+          <a href="hubungi-kami.php"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
         </li>
         <li class="navi">
           <a href="#"><i class="fa-solid fa-user"></i></a>
         </li>
       </ul>
+    </nav>
     </nav>
