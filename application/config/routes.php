@@ -53,4 +53,6 @@ $route['default_controller'] = 'beranda';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['hubungi-kami'] = 'hubungi';
+$route['hubungi-kami/(:any)'] = 'hubungi/$1'; 
 $route['tentang-kami'] = 'tentang';
+$route['tentang-kami/(:any)'] = 'tentang/$1'; 

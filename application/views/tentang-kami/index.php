@@ -1,1 +1,1 @@
-<h1>ttg kuuuuuum</h1>
+<?php echo $message ?>
