@@ -1,0 +1,71 @@
+.tentang-kami-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 50px auto;
+  padding: 0 40px;
+  gap: 30px;
+}
+
+.left,
+.right {
+  flex: 1 1 48%;
+}
+
+/* Judul */
+.judul {
+  
+  color: #661f1f;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Kontak */
+.contact p,
+.contact a {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.contact i {
+  margin-right: 10px;
+  color: #661f1f;
+}
+
+.contact a:hover {
+  color: #733d0e;
+}
+
+/* Foto */
+.foto {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+
+
+/* Deskripsi */
+.desc p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.desc a {
+  color: #733d0e;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.desc a:hover {
+  color: #f1780f;
+}
