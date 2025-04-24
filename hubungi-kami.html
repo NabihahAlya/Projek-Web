@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,14 +15,102 @@
         <label for="nama">Nama</label>
         <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
 
+
         <label for="pesan">Kritik & Saran</label>
         <textarea id="pesan" name="pesan" placeholder="Tulis kritik dan saran Anda..." required></textarea>
+
+  <div class="slideshow-background"></div>
+  <div class="form">
+    <h2>Kritik & Saran</h2>
+    <form action="proses_kritik.php" method="POST">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kritik dan Saran</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f6f8fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-top: 5px;
+      resize: vertical;
+      font-size: 14px;
+    }
+
+    textarea {
+      height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      background: #3498db;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Kritik & Saran</h2>
+    <form action="proses_kritik.php" method="POST">
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
 
         <button type="submit">Kirim</button>
       </form>
     </div>
     <script>
       const images = ["pic/fotopage4-1.jpg", "pic/fotopage4-2.jpg", "pic/fotopage4-3.jpg"];
+
 
       let current = 0;
       const bg = document.querySelector(".slideshow-background");
@@ -35,4 +124,31 @@
       setInterval(changeBackground, 5000);
     </script>
   </body>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <script>
+    const images = [
+      'pic/fotopage4-1.jpg',
+      'pic/fotopage4-2.jpg',
+      'pic/fotopage4-3.jpg'
+    ];
+  
+    let current = 0;
+    const bg = document.querySelector('.slideshow-background');
+  
+    function changeBackground() {
+      bg.style.backgroundImage = `url(${images[current]})`;
+      current = (current + 1) % images.length;
+    }
+  
+    changeBackground();
+    setInterval(changeBackground, 5000);
+  </script>
+  
+
+</body>
+
 </html>

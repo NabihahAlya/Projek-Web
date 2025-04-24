@@ -1,38 +1,88 @@
+/* Container */
 .tentang-kami-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1000px;
   margin: 50px auto;
   padding: 0 40px;
   gap: 30px;
 }
 
-.left,
-.right {
-  flex: 1 1 48%;
+.Deskripsi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 40px;
+  gap: 30px;
+}
+
+.visi-misi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 40px;
+  gap: 30px;
+}
+
+/* Bagian kiri */
+.about-left,
+.desc-left,
+.visi-misi-left {
+  flex: 1;
+}
+
+/* Bagian kanan */
+.about-right,
+.desc-right,
+.visi-misi-right {
+  flex: 1;
 }
 
 /* Judul */
-.judul {
-  
+.judul-top {
+  font-size: 3rem;
   color: #661f1f;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.judul-desc {
+  color: #661f1f;
+  margin-bottom: 23px;
+  margin-top: 0px;
+  text-align: left;
+}
+
+.judul-visi-misi {
+  color: #661f1f;
+  margin-bottom: 23px;
+  margin-top: 65px;
   text-align: left;
 }
 
 /* Kontak */
+.contact {
+  margin-top: 23px; /* agar sejajar dengan judul */
+}
+
 .contact p,
 .contact a {
+  padding-left: 16px;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8;
   color: #000;
   margin: 10px 0;
   text-decoration: none;
 }
 
 .contact i {
-  margin-right: 10px;
+  margin-right: 5px;
   color: #661f1f;
 }
 
@@ -41,31 +91,63 @@
 }
 
 /* Foto */
-.foto {
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+.foto-1,
+.foto-2,
+.foto-3 {
+  background-color: white;
+  padding: 0.5rem;
+  max-width: 630px;
+  border-radius: 20px;
   object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.foto-1 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px;
+}
 
+.foto-2 {
+  margin-left: auto;
+  margin-right: 50px;
+  width: 90%;
+  height: 130%;
+}
+
+.foto-3 {
+  margin-left: auto;
+  margin-right: 50px;
+  width: 90%;
+  height: 100%;
+  margin-top: 65px;
+}
+
+/* Efek Hover */
+.foto-1:hover,
+.foto-2:hover,
+.foto-3:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
 
 /* Deskripsi */
-.desc p {
+.desc-right p {
   font-size: 18px;
-  color: #333;
+  color: black;
   line-height: 1.6;
   margin-bottom: 15px;
   text-align: justify;
+  margin-right: 10px;
 }
 
-.desc a {
-  color: #733d0e;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.desc a:hover {
-  color: #f1780f;
+.visi-misi-left p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: black;
+  text-align: justify;
+  margin-right: 0px;
 }

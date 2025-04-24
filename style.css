@@ -209,10 +209,8 @@ section.section-kamar {
 /* -----------------tentang kami----------- */
 
 .tentang-kami-container {
-  display: flex;
-  max-width: 1300px;
-  margin: 30px auto;
-  padding: 0 40px;
+  padding: 2em;
+  background-color: rgba(247, 245, 243, 0.5);
 }
 
 .left {
