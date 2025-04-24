@@ -1,5 +1,5 @@
     <footer class="footer pt-5 pb-5">
-      <div class="container">
+      <div class="container c-footer">
         <div class="row">
           <div class="col-md-3 col-sm-6 text-center text-md-start mb-4 mb-md-0">
             <img src="<?= base_url('assets/img/logo1.png')?>" alt="Helios Hotel Logo" class="footer-logo" />
@@ -54,5 +54,6 @@
     <script src="<?= base_url('assets/js/main.js')  ?>"></script>
     <script src="<?= base_url('assets/js/section_best.js')  ?>"></script>
     <script src="<?= base_url('assets/js/section_kamar.js')  ?>"></script>
+    <script src="<?= base_url('assets/js/kamar.js')  ?>"></script>
   </body>
 </html>

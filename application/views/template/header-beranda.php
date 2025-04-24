@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/header.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section_kamar.css'); ?>"/>
-    <link rel="stylesheet" href="<?= base_url('assets/css/section_best.css'); ?>"/>
+    <link rel="stylesheet" href="<?= base_url('assets/css/section-best.css'); ?>"/>
   </head>
   <body>
     <header>

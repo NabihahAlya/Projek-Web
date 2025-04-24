@@ -1,1 +1,1 @@
-<?php echo $message ?>
+<h1>tantang kami</h1>
