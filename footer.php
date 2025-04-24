@@ -55,5 +55,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/section_best.js"></script>
     <script src="assets/js/section_kamar.js"></script>
+    <script src="assets/js/kamar.js"></script>
   </body>
 </html>

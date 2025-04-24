@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/section_kamar.css" />
     <link rel="stylesheet" href="assets/css/section_best.css" />
+    <link rel="stylesheet" href="assets/css/kamar.css" />
   </head>
   <body>
     <header>
