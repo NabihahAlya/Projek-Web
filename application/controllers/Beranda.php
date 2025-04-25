@@ -22,13 +22,17 @@ class Beranda extends CI_Controller {
 	public function index()
 	{
 		$data['header'] = 'Beranda';
+		$this->load->model('v_fasilitas');
+		$data['fasilitas'] = $this->v_fasilitas->get_all();
+
 		$this->load->view('template/header-beranda', $data);
 		$this->load->view('beranda/index');
 		$this->load->view('template/footer');
 	}
 
-	public function login(){
-		$this->load->view('beranda/login');
+	public function fasilitas(){
+		$data['header'] = 'Fasilitas';
+		redirect(base_url() . '#fasilitas');
 	}
 
 

@@ -162,35 +162,49 @@
 <section id="fasilitas">
   <h2>Fasilitas</h2>
   <div class="daftar-fasilitas">
-    <a
-      href="https://www.google.com/maps/place/Helios+Hotel/@-7.9732008,112.6321189,917m/data=!3m1!1e3!4m9!3m8!1s0x2dd6283af7d660e9:0x4a02fdae42386c63!5m2!4m1!1i2!8m2!3d-7.9732008!4d112.6346938!16s%2Fg%2F1vnnft00?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"
-      class="fasilitas-item"
-    >
-      <i class="fas fa-map-marker-alt fa-3x"></i>
-      <h3>Lokasi Strategis</h3>
-      <!-- <p>Terletak di dekat Stasiun Malang dan berbagai destinasi wisata populer di Malang, memudahkan perjalanan Anda selama di Kota Malang.</p> -->
+    <?php foreach ($fasilitas as $fas): ?>
+    <?php if ($fas['tipe_aksi'] == 'link'): ?>
+      <a href="<?= $fas['link'] ?>" target="_blank" class="fasilitas-item">
+      <i class="fas <?= $fas['ikon'] ?>"></i>
+      <h3><?= $fas['nama'] ?></h3>
     </a>
-    <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('popup')">
-      <i class="fas fa-bed fa-3x"></i>
-      <h3>Kamar Nyaman dan Modern</h3>
-      <!-- <p>Kamar-kamar elegan dengan desain interior yang menawan.</p> -->
-    </a>
-    <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
-      <i class="fas fa-utensils fa-3x"></i>
-      <h3>Restoran & Kafe</h3>
-      <!-- <p>Menyajikan hidangan lezat, mulai dari kuliner lokal hingga internasional.</p> -->
-    </a>
-    <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
-      <i class="fas fa-dumbbell fa-3x"></i>
-      <h3>Pusat Kebugaran</h3>
-      <!-- <p>Tetap bugar selama perjalanan dengan fasilitas pusat kebugaran kami.</p> -->
-    </a>
-    <a href="javascript:void(0)" class="fasilitas-item" onclick="openPopup('')">
-      <i class="fas fa-parking fa-3x"></i>
-      <h3>Area Parkir</h3>
-      <!-- <p>Area Parkir yang luas dan aman.</p> -->
-    </a>
+   <?php else: ?>
+    <div class="fasilitas-item" onclick="openPopup('popup<?= $fas['id_fasilitas'] ?>')">
+      <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
+      <h3><?= $fas['nama'] ?></h3>
+    </div>
+
+    <!-- POPUP -->
+    <div class="pop-up" id="popup<?= $fas['id_fasilitas'] ?>">
+      <div class="box-pop-up">
+        <i class="fas fa-times close-icon" onclick="closePopup('popup<?= $fas['id_fasilitas'] ?>')"></i>
+
+        <?php if (!empty($fas['foto'])): ?>
+          <div class="carousel-container">
+            <button class="carousel-btn prev" onclick="prevSlide('carouselSlide<?= $fas['id_fasilitas'] ?>')">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-slide" id="carouselSlide<?= $fas['id_fasilitas'] ?>">
+              <?php foreach ($fas['foto'] as $f): ?>
+                <img src="<?= base_url('assets/img/' . $f) ?>" alt="Foto Fasilitas" />
+              <?php endforeach; ?>
+            </div>
+            <button class="carousel-btn next" onclick="nextSlide('carouselSlide<?= $fas['id_fasilitas'] ?>')">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        <?php endif; ?>
+
+        <div class="popup-detail">
+          <h3><?= $fas['nama'] ?></h3>
+          <p><?= $fas['deskripsi'] ?></p>
+        </div>
+      </div>
+    </div>
+    <?php endif; ?>
+    <?php endforeach; ?>
   </div>
+
   <h2>Layanan</h2>
   <div class="daftar-layanan">
     <a href="javascript:void(0)" class="layanan-item" onclick="openPopup('')">
