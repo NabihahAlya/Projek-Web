@@ -45,7 +45,7 @@
           <a href="<?=base_url('index.php/hubungi-kami')?>"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
         </li>
         <li class="navi">
-          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="<?=base_url('auth')?>"><i class="fa-solid fa-user"></i></a>
         </li>
       </ul>
     </nav>

@@ -33,7 +33,6 @@ class Beranda extends CI_Controller {
 	public function fasilitas(){
 		$data['header'] = 'Fasilitas';
 		redirect(base_url() . '#fasilitas');
-	}
-
+	}	
 
 }
