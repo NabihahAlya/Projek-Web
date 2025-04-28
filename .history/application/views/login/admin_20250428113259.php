@@ -122,20 +122,16 @@
 </div>
 
 
-<script>
+<script> 
 $(document).ready(function() {
-  
-
-  // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
-  $('.btn-edit-admin').on('click', function() {
-  const id = $(this).data('id');
-  $('#edit_id_admin').val(id); 
-  
+    $('.btn-edit-admin').on('click', function() {
+        const id = $(this).data('id');
+        console.log('ID yang diambil:', id); // Tambahkan ini
+        $('#edit_id').val(id); 
+    });
 });
 
-});
-
-</script>
+</script> 
 
 
 

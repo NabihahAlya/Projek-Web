@@ -39,7 +39,7 @@ class Admin_model extends CI_Model {
         $updateData = [
             'nama' => $data_baru['nama'],
             'email' => $data_baru['email'],
-            'password' => $data_baru['pw'],
+            'pw' => $data_baru['pw'],
 
         ];
     

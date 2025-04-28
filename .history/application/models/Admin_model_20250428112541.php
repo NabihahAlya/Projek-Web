@@ -30,7 +30,7 @@ class Admin_model extends CI_Model {
         $id_admin = $data_baru['id_admin'];  // Ambil dulu id dari data baru
     
         // cek dulu apakah data dengan id itu ada
-        $cek = $this->db->get_where('admin', ['id_admin' => $id_admin])->row();
+        $cek = $this->db->get_where('admin', ['id' => $id_admin])->row();
         if (!$cek) {
             return false; // data ga ada, gagal update
         }
@@ -39,7 +39,7 @@ class Admin_model extends CI_Model {
         $updateData = [
             'nama' => $data_baru['nama'],
             'email' => $data_baru['email'],
-            'password' => $data_baru['pw'],
+            'pw' => $data_baru['pw'],
 
         ];
     

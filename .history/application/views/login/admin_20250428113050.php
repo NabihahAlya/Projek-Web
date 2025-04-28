@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  
-  <!-- jQuery & Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  
-  <!-- CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <link href="<?= base_url('include/vendor/notyf/notyf.min.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('include/css/volt.css') ?>" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Primary Meta Tags -->
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="Dashboard" />
+    <meta name="author" content="Themesberg" />
+    <meta name="description" content="Volt Pro is a Premium Bootstrap 5 Admin Dashboard featuring over 800 components, 10+ plugins and 20 example pages using Vanilla JS." />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('include/img/favicon/logo1.png') ?>" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('include/img/favicon/logo1.png') ?>" />
+    <!-- Sweet Alert -->
+    <link type="text/css" href="<?= base_url('include/vendor/sweetalert2/dist/sweetalert2.min.css') ?>" rel="stylesheet" />
+    <!-- Notyf -->
+    <link type="text/css" href="<?= base_url('include/vendor/notyf/notyf.min.css') ?>" rel="stylesheet" />
+    <!-- Volt CSS -->
+    <link type="text/css" href="<?= base_url('include/css/volt.css') ?>" rel="stylesheet" />
   </head>
   
   <body>
@@ -43,7 +45,7 @@
                 <td><?php echo $a->email; ?></td>
                 <td><?php echo $a->password; ?></td>
                 <td>
-                  <a href="#" class="btn btn-sm btn-warning btn-edit-admin" data-id="<?= $a->id_admin ?>" data-bs-toggle="modal" data-bs-target="#modalEditAdmin">Edit</a>
+                <a href="#" class="btn btn-sm btn-warning btn-edit-admin" data-id="<?= $f->id_admin ?>" data-bs-toggle="modal" data-bs-target="#modalEditAdmin">Edit</a>
                   <a href="<?= base_url('admin/hapus_admin/' . $a->id_admin) ?>" class="btn btn-sm btn-danger">Hapus</a>
                 </td>
               </tr> 
@@ -122,20 +124,16 @@
 </div>
 
 
-<script>
+<script> 
 $(document).ready(function() {
-  
-
-  // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
-  $('.btn-edit-admin').on('click', function() {
-  const id = $(this).data('id');
-  $('#edit_id_admin').val(id); 
-  
+    $('.btn-edit-admin').on('click', function() {
+        const id = $(this).data('id');
+        console.log('ID yang diambil:', id); // Tambahkan ini
+        $('#edit_id').val(id); 
+    });
 });
 
-});
-
-</script>
+</script> 
 
 
 

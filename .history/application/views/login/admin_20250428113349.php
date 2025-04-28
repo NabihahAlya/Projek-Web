@@ -122,21 +122,6 @@
 </div>
 
 
-<script>
-$(document).ready(function() {
-  
-
-  // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
-  $('.btn-edit-admin').on('click', function() {
-  const id = $(this).data('id');
-  $('#edit_id_admin').val(id); 
-  
-});
-
-});
-
-</script>
-
 
 
     <script src="<?= base_url('include/vendor/@popperjs/core/dist/umd/popper.min.js') ?>"></script>
