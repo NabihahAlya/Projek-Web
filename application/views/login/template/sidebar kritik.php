@@ -80,7 +80,7 @@
       </div>
     </nav>
     <script src="<?= base_url('include/vendor/@popperjs/core/dist/umd/popper.min.js') ?>"></script>
-    <script src="<?= base_url('include/vendor/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('include/js/volt.js') ?>"></script>
     <!-- Vendor JS -->
     <script src="<?= base_url('include/vendor/onscreen/dist/on-screen.umd.min.js') ?>"></script>
     <!-- Slider -->

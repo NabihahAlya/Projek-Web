@@ -1,68 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
-  
-  <!-- jQuery & Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-  
-  <!-- CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <link href="<?= base_url('include/vendor/notyf/notyf.min.css') ?>" rel="stylesheet">
-  <link href="<?= base_url('include/css/volt.css') ?>" rel="stylesheet">
-
-  <style>
-    .select2-container--default .select2-selection--single { height: 38px; border: 1px solid #ced4da; border-radius: 4px; width: 100%; }
-    .select2-container--default .select2-selection--single .select2-selection__rendered { line-height: 38px; padding-left: 12px; }
-    .select2-container--default .select2-selection--single .select2-selection__arrow { height: 36px; right: 5px; }
-  </style>
-
-  <script>
-    function previewIcon(selectElement) {
-      var selectedIcon = selectElement.value;
-      $('#previewIcon').attr('class', selectedIcon ? 'fas ' + selectedIcon : '');
-    }
-  </script>
-</head>
-
-<body>
 <main class="content mt-5">
   <div class="card mt-5">
     <div class="card-header d-flex justify-content-between align-items-center">
-      <h5 class="mb-0">Data layanan</h5>
+      <h5 class="mb-0">DATA LAYANAN</h5>
       <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#modalLayanan">+ Tambah layanan</a>
     </div>
     <div class="card-body">
-      <table class="table table-hover">
-        <thead class="thead-light">
-          <tr>
-            <th>No</th>
-            <th>Nama layanan</th>
-            <th>Jenis</th>
-            <th>Ikon</th>
-            <th>Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php $no = 1; foreach ($layanan_list as $f) : ?>
-          <tr>
-            <td><?= $no++ ?></td>
-            <td><?= $f->nama ?></td>
-            <td><?= $f->tipe_aksi ?></td>
-            <td><i class="fas <?= $f->ikon ?>"></i></td>
-            <td>
-              <a href="#" class="btn btn-sm btn-warning btn-edit-layanan" data-id="<?= $f->id_layanan ?>" data-bs-toggle="modal" data-bs-target="#modalEditLayanan">Edit</a>
-              <a href="<?= base_url('admin/hapus_layanan/' . $f->id_layanan) ?>" class="btn btn-sm btn-danger">Hapus</a>
-            </td>
-          </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>No</th>
+              <th>Nama layanan</th>
+              <th>Jenis</th>
+              <th>Ikon</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php $no = 1; foreach ($layanan_list as $f) : ?>
+            <tr>
+              <td><?= $no++ ?></td>
+              <td><?= $f->nama ?></td>
+              <td><?= $f->tipe_aksi ?></td>
+              <td><i class="fas <?= $f->ikon ?>"></i></td>
+              <td>
+                <a href="#" class="btn btn-sm btn-warning btn-edit-layanan" data-id="<?= $f->id_layanan ?>" data-bs-toggle="modal" data-bs-target="#modalEditLayanan">Edit</a>
+                <a href="<?= base_url('admin/hapus_layanan/' . $f->id_layanan) ?>" class="btn btn-sm btn-danger">Hapus</a>
+              </td>
+            </tr>
+            <?php endforeach; ?>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </main>
@@ -116,7 +85,7 @@
           <div id="formPopup" class="d-none">
             <div class="mb-3">
               <label for="deskripsi" class="form-label">Deskripsi</label>
-              <textarea class="form-control" id="" name="deskripsi"></textarea>
+              <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
             </div>
             <div class="mb-3">
               <label class="form-label">Upload Foto</label>
@@ -215,82 +184,3 @@
     </div>
   </div>
 </div>
-
-<script>
-$(document).ready(function() {
-  // Select2 setup
-  $('#ikon, #edit_ikon').select2({
-    templateResult: function(option) {
-      if (!option.id) return option.text;
-      return $('<span><i class="fas ' + option.id + '" style="margin-right:8px;"></i>' + option.text + '</span>');
-    },
-    templateSelection: function(option) {
-      return option.text;
-    },
-    width: '100%'
-  });
-
-  // Tambah file baru di tambah layanan
-  $('#addMoreFiles').on('click', function() {
-    const container = $('#fileUploadContainer');
-    const newInput = $(`
-      <div class="file-input-wrapper mb-2">
-        <input type="file" class="form-control" name="foto[]" accept="image/*">
-        <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
-      </div>
-    `);
-    container.append(newInput);
-    newInput.find('.remove-file').on('click', function() {
-      $(this).parent().remove();
-    });
-  });
-
-  // Tambah file baru di edit layanan
-  $('#edit_addMoreFiles').on('click', function() {
-    const container = $('#edit_fileUploadContainer');
-    const newInput = $(`
-      <div class="file-input-wrapper mb-2">
-        <input type="file" class="form-control" name="foto[]" accept="image/*">
-        <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
-      </div>
-    `);
-    container.append(newInput);
-    newInput.find('.remove-file').on('click', function() {
-      $(this).parent().remove();
-    });
-  });
-
-  // Ubah tampilan formLink dan formPopup di Tambah
-  $('#tipe_aksi').on('change', function() {
-    const value = $(this).val();
-    $('#formLink, #formPopup').addClass('d-none');
-    if (value === 'link') {
-      $('#formLink').removeClass('d-none');
-    } else if (value === 'popup') {
-      $('#formPopup').removeClass('d-none');
-    }
-  });
-
-  // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
-  $('.btn-edit-layanan').on('click', function() {
-  const id = $(this).data('id');
-  $('#edit_id_layanan').val(id); 
-  
-});
-
-
-  // Kalau user ubah manual tipe aksi di modal edit
-  $('#edit_tipe_aksi').on('change', function() {
-    const value = $(this).val();
-    $('#edit_formLink, #edit_formPopup').addClass('d-none');
-    if (value === 'link') {
-      $('#edit_formLink').removeClass('d-none');
-    } else if (value === 'popup') {
-      $('#edit_formPopup').removeClass('d-none');
-    }
-  });
-});
-
-</script>
-</body>
-</html>

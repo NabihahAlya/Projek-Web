@@ -1,0 +1,170 @@
+
+.tentang-kami-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 40px;
+    gap: 30px;
+  }
+  
+  .Deskripsi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 40px;
+    gap: 30px;
+  }
+  
+  
+  .visi-misi-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 40px;
+    gap: 30px;
+  }
+  
+  /* Bagian kiri */
+  .about-left,
+  .desc-left,
+  .visi-misi-left {
+    flex: 1;
+  }
+  
+  /* Bagian kanan */
+  .about-right,
+  .desc-right,
+  .visi-misi-right {
+    flex: 1;
+  }
+  
+  /* Judul */
+  .judul-top {
+    font-size: 3rem;
+    color: #661f1f;
+    margin-bottom: 23px;
+    margin-top: 0px;
+    text-align: left;
+    padding-right: 23px;
+  }
+  
+  .judul-desc {
+    color: #661f1f;
+    margin-bottom: 23px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  
+  .judul-visi-misi {
+    color: #661f1f;
+    margin-bottom: 23px;
+    margin-top: auto;
+    text-align: left;
+  }
+  
+  /* Kontak */
+  .contact {
+    margin-top: 23px; /* agar sejajar dengan judul */
+  }
+  
+  .contact p,
+  .contact a {
+    padding-left: 4px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000;
+    margin: 10px 0;
+    text-decoration: none;
+  }
+  
+  .desc-right p {
+    font-size: 18px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: auto;
+    text-align: justify;
+    margin-right: 10px;
+  }
+  
+  .visi-misi-left .contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    text-align: justify;
+    margin-right: 15px;
+    padding-left: 4px;
+  }
+  
+  
+  .contact i {
+    margin-right: 5px;
+    color: #661f1f;
+  }
+  
+  .contact a:hover {
+    color: #733d0e;
+  }
+  
+  /* Foto */
+  
+  .foto-1 {
+    background-color: white;
+    padding: 0.5rem;
+    max-width: 630px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  .foto-2 {
+    background-color: white;
+    padding: 0.5rem;
+    max-width: 630px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: auto;
+    margin-right: 16px;
+    width: 93%;
+    height: 90%;
+    
+  }
+  
+  .foto-3 {
+    background-color: white;
+    padding: 0.5rem;
+    max-width: 630px;
+    border-radius: 20px;
+    object-fit: cover;
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%; 
+  
+  }
+  
+  /* Efek Hover */
+  .foto-1:hover,
+  .foto-2:hover,
+  .foto-3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }

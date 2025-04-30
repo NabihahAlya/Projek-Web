@@ -17,12 +17,36 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
+.select2-container--default .select2-selection--single { 
+  height: 38px; 
+  border: 1px solid #ced4da; 
+  border-radius: 4px; 
+  width: 100%; 
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered { 
+  line-height: 38px; 
+  padding-left: 12px; 
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow { 
+  height: 36px; 
+  right: 5px; 
+}
+
 main {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(115, 61, 14, 0.9));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.hamburger-menu {
+  display: block;
+  font-size: 24px;
+  color: #f1780f;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0 15px;
 }
 
 .datepicker {
@@ -4856,10 +4880,8 @@ textarea.form-control.is-invalid {
 }
 
 .header {
-  display: flex;
   height: 70px;
   width: 100%;
-  align-items: center;
   padding: 10px;
   background: linear-gradient(90deg, #000000, #733d0e);
   font-family: "Segoe UI", sans-serif;
@@ -4868,12 +4890,11 @@ textarea.form-control.is-invalid {
   top: 0;
   z-index: 5;
 }
-
 .header img {
   height: 80px;
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10px 0;
   margin-top: 0;
   padding-right: 0;
   position: relative;
@@ -4881,6 +4902,7 @@ textarea.form-control.is-invalid {
 }
 
 header p {
+  height: 60px;
   display: flex;
   align-items: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -4890,15 +4912,266 @@ header p {
   margin: 0;
 }
 
+
 #sidebarMenu {
   display: flex;
   padding-top: 80px;
-  z-index: 0;
+  z-index: 1;
 }
 
-#dashboard {
-  padding-top: 80px;
+
+
+@media (min-width: 992px) {
+  .content {
+    margin-left: 260px;
+  }
+  .hamburger-menu{
+    display: none;
+  }
+  
+  .header img {
+    height: calc(60px + (20 * ((100vw - 992px) / 928)));
+  }
+  
+  header p {
+    font-size: calc(24px + (8 * ((100vw - 992px) / 928)));
+  }
+
+  .header{
+    height: calc(55px + (25 * ((100vw - 992px) / 928))); 
+  }
+
+  #sidebarMenu {
+    padding-top: calc(60px + (20 * ((100vw - 992px) / 928))); 
+  }
+
+  
 }
+
+ @media (min-width: 768px) and (max-width: 991px){
+  .header {
+    height: calc(45px + (5 * ((100vw - 768px) / 224)));
+  }
+
+  span{
+    font-size: 12px;
+  }
+
+  .hamburger-menu{
+    font-size: 20px;
+  }
+  
+  .header img {
+    height: calc(50px + (5 * ((100vw - 768px) / 224)));
+  }
+  
+  header p {
+    font-size: calc(18px + (2 * ((100vw - 768px) / 224)))
+  }
+  
+  #sidebarMenu {
+    padding-top: calc(50px + (15 * ((100vw - 768px) / 224)));
+    width:42%;
+    display: none;
+  }
+
+  #sidebarMenu.mobile-open{
+    display: flex;
+  }
+
+  #sidebarMenu span{
+    font-size: 12px;
+  }
+
+  .dropdown-menu .dropdown-header, .dropdown-menu .dropdown-item {
+    padding: 0 10px !important;
+    font-size: 0.875rem !important;
+  }
+  main.mt-5 {
+    margin-top: clamp(2.8rem, 2.8rem + (0.2 * ((100vw - 768px) / 223)), 3rem) !important;
+  }
+  
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header {
+    height: calc(50px + (5 * ((100vw - 480px) / 287)));
+  }
+
+  span {
+    font-size: 12px;
+  }
+
+  .hamburger-menu {
+    font-size: 18px;
+  }
+
+  .header img {
+    height: calc(45px + (5 * ((100vw - 480px) / 287)));
+  }
+
+  header p {
+    font-size: calc(14px + (2 * ((100vw - 480px) / 287)));
+  }
+
+  #sidebarMenu {
+    padding-top: calc(45px + (15 * ((100vw - 480px) / 287))); 
+    display: none;
+    width:42%;
+  }
+
+  #sidebarMenu.mobile-open{
+    display: flex;
+  }
+
+  #sidebarMenu span{
+    font-size: 12px;
+  }
+
+  .dropdown-menu .dropdown-header, .dropdown-menu .dropdown-item {
+    padding: 0 10px !important;
+    font-size: 0.875rem !important;
+  }
+
+  .table td, .table th {
+    font-size: 0.6rem !important;
+}
+h5{
+  font-size: 12px;
+}
+.btn-sm, .btn-group-sm > .btn {
+  font-size: 0.5rem !important;
+}
+.card-header {
+padding: 1rem 1.5rem !important;
+}
+.table > :not(caption) > * > * {
+  padding: 0.3rem 1rem !important;
+}
+}
+
+@media (max-width: 479px) {
+  .header {
+    height: 40px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+
+  .hamburger-menu {
+    font-size: 16px;
+  }
+
+  .header img {
+    height: 39px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  #sidebarMenu {
+    padding-top:40px; 
+    display: none;
+    width:50%;
+  }
+
+  #sidebarMenu.mobile-open{
+    display: flex;
+  }
+
+  #sidebarMenu span{
+    font-size: 12px;
+  }
+
+
+  dropdown-menu .dropdown-header, .dropdown-menu .dropdown-item {
+    padding: 0 5px;
+    font-size: 0.875rem;
+  }
+
+  main.mt-5{
+    margin-top: 2.5rem !important;
+  }
+
+  h5{
+    font-size: 12px;
+  }
+  .btn-sm, .btn-group-sm > .btn {
+    font-size: 0.5rem !important;
+  }
+  .card-header {
+  padding: 1rem 1.5rem !important;
+  }
+  .table > :not(caption) > * > * {
+    padding: 0.3rem 1rem !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .header {
+    height: 40px;
+  }
+
+  span {
+    font-size: 10px;
+  }
+
+  .hamburger-menu {
+    font-size: 14px;
+  }
+
+  .header img {
+    height: 38px;
+  }
+
+  header p {
+    font-size: 10px;
+  }
+
+  #sidebarMenu {
+    padding-top: 35px;
+    font-size: 6px;
+    display: none;
+    width:50%;
+  }
+
+  #sidebarMenu.mobile-open{
+    display: flex;
+  }
+
+
+  #sidebarMenu span{
+    font-size: 12px;
+  }
+
+  .dropdown-menu .dropdown-header, .dropdown-menu .dropdown-item {
+    padding: 0 10px !important;
+    font-size: 0.875rem !important;
+  }
+
+  mt-2 {
+    margin-top: 0 !important;
+  }
+
+  main.mt-5{
+    margin-top: 2.5rem !important;
+  }
+  h5{
+    font-size: 12px;
+  }
+  .btn-sm, .btn-group-sm > .btn {
+    font-size: 0.5rem !important;
+  }
+  .card-header {
+  padding: 1rem 1.5rem !important;
+  }
+  .table > :not(caption) > * > * {
+    padding: 0.3rem 1rem !important;
+  }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -23747,11 +24020,7 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 992px) {
-  .content {
-    margin-left: 260px;
-  }
-}
+
 
 .sidebar-toggle {
   font-size: 1.3rem;

@@ -1,5 +1,3 @@
-
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -19,16 +17,16 @@ class Admin extends CI_Controller {
         $data['admin_name'] = $this->session->userdata('admin_name');
 
         $this->load->view('login/template/header', $data);
+        $this->load->view('login/cb', $data);
         $this->load->view('login/template/sidebar kritik');
-        $this->load->view('login/kritiksaran', $data);
     }
 
     public function kamar() {
         $data['admin_name'] = $this->session->userdata('admin_name');
         
         $this->load->view('login/template/header',$data);
-        $this->load->view('login/template/sidebar');
         $this->load->view('login/kamar');
+        $this->load->view('login/template/sidebar');
     }
 
     public function fasilitas() {
@@ -36,8 +34,8 @@ class Admin extends CI_Controller {
         $data['admin_name'] = $this->session->userdata('admin_name');
 
         $this->load->view('login/template/header', $data);
-        $this->load->view('login/template/sidebar');
         $this->load->view('login/fasilitas', $data);
+        $this->load->view('login/template/sidebar');
     }
 
     public function layanan() {
@@ -45,8 +43,8 @@ class Admin extends CI_Controller {
         $data['admin_name'] = $this->session->userdata('admin_name');
 
         $this->load->view('login/template/header', $data);
-        $this->load->view('login/template/sidebar');
         $this->load->view('login/layanan', $data);
+        $this->load->view('login/template/sidebar');
     }
 
     public function admin() {
@@ -54,8 +52,9 @@ class Admin extends CI_Controller {
         $data['admin_name'] = $this->session->userdata('admin_name');
 
         $this->load->view('login/template/header', $data);
-        $this->load->view('login/template/sidebar');
         $this->load->view('login/admin', $data);
+        $this->load->view('login/template/sidebar');
+
     }
 
     public function tambah_fasilitas() {

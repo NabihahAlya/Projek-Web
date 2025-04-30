@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/section_kamar.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section_best.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/kamar.css'); ?>"/>
+    <link rel="stylesheet" href="<?= base_url('assets/css/kritik-saran.css'); ?>"/>
   </head>
   <body>
     <header>
       <div class="header">
-        <img src="<?=base_url('assets/img/logo_wt_name.png')?>" alt="logo" />
+        <img src="<?=base_url('assets/img/logo.png')?>" alt="logo" />
         <p>Helios Hotel Malang</p>
         <div class="hamburger-menu">
           <i class="fas fa-bars"></i>

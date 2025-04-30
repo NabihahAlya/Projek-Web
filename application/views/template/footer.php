@@ -2,7 +2,7 @@
       <div class="container c-footer">
         <div class="row">
           <div class="col-md-3 col-sm-6 text-center text-md-start mb-4 mb-md-0">
-            <img src="<?= base_url('assets/img/logo1.png')?>" alt="Helios Hotel Logo" class="footer-logo" />
+            <img src="<?= base_url('assets/img/logo.png')?>" alt="Helios Hotel Logo" class="footer-logo" />
           </div>
 
           <div class="col-md-2 col-sm-6 mb-4 mb-md-0">

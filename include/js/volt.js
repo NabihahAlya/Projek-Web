@@ -13,6 +13,179 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal. Contact us if you want to remove it.
 
 */
+// ini darii fasilitas
+$(document).ready(function() {
+    // Select2 setup
+    $('#ikon, #edit_ikon').select2({
+      templateResult: function(option) {
+        if (!option.id) return option.text;
+        return $('<span><i class="fas ' + option.id + '" style="margin-right:8px;"></i>' + option.text + '</span>');
+      },
+      templateSelection: function(option) {
+        return option.text;
+      },
+      width: '100%'
+    });
+  
+    // Tambah file baru di tambah fasilitas
+    $('#addMoreFiles').on('click', function() {
+      const container = $('#fileUploadContainer');
+      const newInput = $(`
+        <div class="file-input-wrapper mb-2">
+          <input type="file" class="form-control" name="foto[]" accept="image/*">
+          <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
+        </div>
+      `);
+      container.append(newInput);
+      newInput.find('.remove-file').on('click', function() {
+        $(this).parent().remove();
+      });
+    });
+  
+    // Tambah file baru di edit fasilitas
+    $('#edit_addMoreFiles').on('click', function() {
+      const container = $('#edit_fileUploadContainer');
+      const newInput = $(`
+        <div class="file-input-wrapper mb-2">
+          <input type="file" class="form-control" name="foto[]" accept="image/*">
+          <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
+        </div>
+      `);
+      container.append(newInput);
+      newInput.find('.remove-file').on('click', function() {
+        $(this).parent().remove();
+      });
+    });
+  
+    // Ubah tampilan formLink dan formPopup di Tambah
+    $('#tipe_aksi').on('change', function() {
+      const value = $(this).val();
+      $('#formLink, #formPopup').addClass('d-none');
+      if (value === 'link') {
+        $('#formLink').removeClass('d-none');
+      } else if (value === 'popup') {
+        $('#formPopup').removeClass('d-none');
+      }
+    });
+  
+    // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
+    $('.btn-edit-fasilitas').on('click', function() {
+    const id = $(this).data('id');
+    $('#edit_id_fasilitas').val(id); 
+    
+  });
+  
+  
+    // Kalau user ubah manual tipe aksi di modal edit
+    $('#edit_tipe_aksi').on('change', function() {
+      const value = $(this).val();
+      $('#edit_formLink, #edit_formPopup').addClass('d-none');
+      if (value === 'link') {
+        $('#edit_formLink').removeClass('d-none');
+      } else if (value === 'popup') {
+        $('#edit_formPopup').removeClass('d-none');
+      }
+    });
+  });
+
+// Ini dari layanan
+$(document).ready(function() {
+    // Select2 setup
+    $('#ikon, #edit_ikon').select2({
+      templateResult: function(option) {
+        if (!option.id) return option.text;
+        return $('<span><i class="fas ' + option.id + '" style="margin-right:8px;"></i>' + option.text + '</span>');
+      },
+      templateSelection: function(option) {
+        return option.text;
+      },
+      width: '100%'
+    });
+  
+    // Tambah file baru di tambah layanan
+    $('#addMoreFiles').on('click', function() {
+      const container = $('#fileUploadContainer');
+      const newInput = $(`
+        <div class="file-input-wrapper mb-2">
+          <input type="file" class="form-control" name="foto[]" accept="image/*">
+          <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
+        </div>
+      `);
+      container.append(newInput);
+      newInput.find('.remove-file').on('click', function() {
+        $(this).parent().remove();
+      });
+    });
+  
+    // Tambah file baru di edit layanan
+    $('#edit_addMoreFiles').on('click', function() {
+      const container = $('#edit_fileUploadContainer');
+      const newInput = $(`
+        <div class="file-input-wrapper mb-2">
+          <input type="file" class="form-control" name="foto[]" accept="image/*">
+          <button type="button" class="btn btn-sm btn-danger mt-1 remove-file">Hapus</button>
+        </div>
+      `);
+      container.append(newInput);
+      newInput.find('.remove-file').on('click', function() {
+        $(this).parent().remove();
+      });
+    });
+  
+    // Ubah tampilan formLink dan formPopup di Tambah
+    $('#tipe_aksi').on('change', function() {
+      const value = $(this).val();
+      $('#formLink, #formPopup').addClass('d-none');
+      if (value === 'link') {
+        $('#formLink').removeClass('d-none');
+      } else if (value === 'popup') {
+        $('#formPopup').removeClass('d-none');
+      }
+    });
+  
+    // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
+    $('.btn-edit-layanan').on('click', function() {
+    const id = $(this).data('id');
+    $('#edit_id_layanan').val(id); 
+    
+  });
+  
+  
+    // Kalau user ubah manual tipe aksi di modal edit
+    $('#edit_tipe_aksi').on('change', function() {
+      const value = $(this).val();
+      $('#edit_formLink, #edit_formPopup').addClass('d-none');
+      if (value === 'link') {
+        $('#edit_formLink').removeClass('d-none');
+      } else if (value === 'popup') {
+        $('#edit_formPopup').removeClass('d-none');
+      }
+    });
+  });
+// dari admin
+
+
+$(document).ready(function() {
+    // =================== INI BAGIAN EDIT YANG KITA PERBAIKI ===================
+    $('.btn-edit-admin').on('click', function() {
+        const id = $(this).data('id');
+        $('#edit_id_admin').val(id); 
+    });
+});
+
+
+function previewIcon(selectElement) {
+    var selectedIcon = selectElement.value;
+    $('#previewIcon').attr('class', selectedIcon ? 'fas ' + selectedIcon : '');S }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const nav = document.querySelector('nav');
+    
+    hamburger.addEventListener('click', function() {
+      nav.classList.toggle('mobile-open');
+    });
+});
 
 "use strict";
 const d = document;

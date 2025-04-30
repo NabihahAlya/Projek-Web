@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- Primary Meta Tags -->
-    <title>Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="title" content="Dashboard" />
-    <meta name="author" content="Themesberg" />
-  
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('include/img/favicon/logo1.png') ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('include/img/favicon/logo1.png') ?>" />
-
-   <!-- Sweet Alert -->
-   <link type="text/css" href="<?= base_url('include/vendor/sweetalert2/dist/sweetalert2.min.css') ?>" rel="stylesheet" />
-
-    <!-- Notyf -->
-    <link type="text/css" href="<?= base_url('include/vendor/notyf/notyf.min.css') ?>" rel="stylesheet" />
-
-    <!-- Volt CSS -->
-    <link type="text/css" href="<?= base_url('include/css/volt.css') ?>" rel="stylesheet" />
-
-  </head>
-  <body>
-    <nav id="sidebarMenu" class="sidebar d-lg-block bg-custom text-white collapse" data-simplebar>
+<nav id="sidebarMenu" class="sidebar d-lg-block bg-custom text-white collapse" data-simplebar>
       <div class="sidebar-inner px-4 pt-3">
         <ul class="nav flex-column pt-3 pt-md-0">
           <li class="nav-item">
@@ -79,8 +54,9 @@
         </ul>
       </div>
     </nav>
+
     <script src="<?= base_url('include/vendor/@popperjs/core/dist/umd/popper.min.js') ?>"></script>
-    <script src="<?= base_url('include/vendor/bootstrap/dist/js/bootstrap.min.js') ?>"></script>
+    <script src="<?= base_url('include/js/volt.js') ?>"></script>
     <!-- Vendor JS -->
     <script src="<?= base_url('include/vendor/onscreen/dist/on-screen.umd.min.js') ?>"></script>
     <!-- Slider -->
@@ -104,5 +80,4 @@
     <script src="<?= base_url('include/vendor/simplebar/dist/simplebar.min.js') ?>"></script>
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </body>
-</html>
+
