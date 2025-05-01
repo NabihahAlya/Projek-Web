@@ -25,27 +25,23 @@ class Admin_model extends CI_Model {
         $this->db->delete('admin'); 
     }
 
-    public function update_admin($data_baru)
-    {
-        $id_admin = $data_baru['id_admin'];  // Ambil dulu id dari data baru
-    
-        // cek dulu apakah data dengan id itu ada
+    public function get_by_id($id) {
+        $this->db->where('id_admin', $id);
+        return $admin = $this->db->get('admin')->row_array();
+    }
+
+    public function update_admin($data_baru){
+        $id_admin = $data_baru['id_admin']; 
         $cek = $this->db->get_where('admin', ['id_admin' => $id_admin])->row();
         if (!$cek) {
-            return false; // data ga ada, gagal update
+            return false;
         }
-    
-        // Pastikan data_baru hanya berisi kolom yang akan diupdate
         $updateData = [
             'nama' => $data_baru['nama'],
             'email' => $data_baru['email'],
-            'password' => $data_baru['pw'],
-
+            'password' => $data_baru['password'],
         ];
-    
         $this->db->where('id_admin', $id_admin);
         return $this->db->update('admin', $updateData); // true/false
     }
-    
-
 }

@@ -33,9 +33,9 @@
 }
 
 main {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(115, 61, 14, 0.9));
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('../../assets/img/motif.jpg');
+  background-repeat: repeat;
+  background-size: 100px 100px;
   background-position: center;
   min-height: 100vh;
 }
@@ -5107,6 +5107,10 @@ padding: 1rem 1.5rem !important;
   .table > :not(caption) > * > * {
     padding: 0.3rem 1rem !important;
   }
+
+  .table td, .table th {
+    font-size: 0.5rem !important;
+}
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -5170,6 +5174,9 @@ padding: 1rem 1.5rem !important;
   .table > :not(caption) > * > * {
     padding: 0.3rem 1rem !important;
   }
+  .table td, .table th {
+    font-size: 0.5rem !important;
+}
 }
 
 

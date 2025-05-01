@@ -37,7 +37,7 @@
 </main>
   
 <!-- Modal Tambah Admin -->
-  <div class="modal fade" id="modalAdmin" tabindex="-1" aria-labelledby="modalAdminLabel" aria-hidden="true">
+  <div class="modal fade mt-5 px-3" id="modalAdmin" tabindex="-1" aria-labelledby="modalAdminLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <form action="<?= base_url('admin/tambah_admin'); ?>" method="post" enctype="multipart/form-data">
@@ -69,7 +69,7 @@
   </div>
 
   <!-- Modal Edit Admin -->
-  <div class="modal fade" id="modalEditAdmin" tabindex="-1" aria-labelledby="modalEditAdminLabel" aria-hidden="true">
+  <div class="modal fade mt-5 px-3" id="modalEditAdmin" tabindex="-1" aria-labelledby="modalEditAdminLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <form id="formEditAdmin" action="<?= base_url('admin/update_admin'); ?>" method="post" enctype="multipart/form-data">
@@ -80,16 +80,16 @@
           </div>
           <div class="modal-body">
             <div class="mb-3">
-              <label for="nama" class="form-label">Nama Admin</label>
-              <input type="text" class="form-control" name="nama" id="nama" required>
+              <label for="edit_nama" class="form-label">Nama Admin</label>
+              <input type="text" class="form-control" name="nama" id="edit_nama" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-control" name="email" id="email" required>
+              <label for="edit_email" class="form-label">Email</label>
+              <input type="text" class="form-control" name="email" id="edit_email" required>
             </div>
             <div class="mb-3">
-              <label for="pw" class="form-label">Password</label>
-              <input type="text" class="form-control" name="pw" id="pw" required>
+              <label for="edit_password" class="form-label">Password</label>
+              <input type="text" class="form-control" name="password" id="edit_password" required>
             </div>
           </div>
           <div class="modal-footer">

@@ -11,15 +11,13 @@ class Auth extends CI_Controller {
         if($this->session->userdata('admin_logged_in')) {
             redirect('admin/dashboard');
         }
-        $this->load->view('login/index'); 
+        $this->load->view('admin/index'); 
     }
 
     public function process() {
         $email = $this->input->post('email');
         $password = $this->input->post('password');
-
         $admin = $this->admin_model->login($email, $password);
-
         if($admin) {
             $this->session->set_userdata([
                 'admin_id' => $admin->id,
@@ -33,7 +31,6 @@ class Auth extends CI_Controller {
         }
     }
 
-    // Logout
     public function logout() {
         $this->session->unset_userdata(['admin_id', 'admin_name', 'admin_logged_in']);
         redirect('auth');

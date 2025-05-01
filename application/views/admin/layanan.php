@@ -37,15 +37,15 @@
 </main>
 
 <!-- Modal Tambah layanan -->
-<div class="modal fade" id="modalLayanan" tabindex="-1" aria-labelledby="modalLayananLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade mt-5 px-3" id="modalLayanan" tabindex="-1" aria-labelledby="modalLayananLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-scrollable">
     <div class="modal-content">
       <form action="<?= base_url('admin/tambah_layanan'); ?>" method="post" enctype="multipart/form-data">
         <div class="modal-header">
           <h5 class="modal-title" id="modalLayananLabel">Tambah Layanan</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama Layanan</label>
             <input type="text" class="form-control" id="nama" name="nama" required>
@@ -108,8 +108,8 @@
 </div>
 
 <!-- Modal Edit Layanan -->
-<div class="modal fade" id="modalEditLayanan" tabindex="-1" aria-labelledby="modalEditLayananLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade mt-5 px-3" id="modalEditLayanan" tabindex="-1" aria-labelledby="modalEditLayananLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <form id="formEditLayanan" action="<?= base_url('admin/update_layanan'); ?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id_layanan" id="edit_id_layanan">
@@ -117,7 +117,7 @@
           <h5 class="modal-title" id="modalEditLayananLabel">Edit Layanan</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
           <div class="mb-3">
             <label for="edit_nama" class="form-label">Nama Layanan</label>
             <input type="text" class="form-control" id="edit_nama" name="nama" required>

@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/section_best.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/kamar.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/kritik-saran.css'); ?>"/>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/logo.png') ?>" />
+
+    <script>const base_url = "<?= base_url(); ?>";</script>
   </head>
   <body>
     <header>

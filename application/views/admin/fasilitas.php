@@ -37,15 +37,15 @@
 </main>
 
 <!-- Modal Tambah Fasilitas -->
-<div class="modal fade" id="modalFasilitas" tabindex="-1" aria-labelledby="modalFasilitasLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade mt-5 px-3" id="modalFasilitas" tabindex="-1" aria-labelledby="modalFasilitasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <form action="<?= base_url('admin/tambah_fasilitas'); ?>" method="post" enctype="multipart/form-data">
         <div class="modal-header">
           <h5 class="modal-title" id="modalFasilitasLabel">Tambah Fasilitas</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama Fasilitas</label>
             <input type="text" class="form-control" name="nama" id="nama" required>
@@ -108,8 +108,8 @@
 </div>
 
 <!-- Modal Edit Fasilitas -->
-<div class="modal fade" id="modalEditFasilitas" tabindex="-1" aria-labelledby="modalEditFasilitasLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade mt-5 px-3" id="modalEditFasilitas" tabindex="-1" aria-labelledby="modalEditFasilitasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
     <div class="modal-content">
       <form id="formEditFasilitas" action="<?= base_url('admin/update_fasilitas'); ?>" method="post" enctype="multipart/form-data">
         <input type="hidden" name="id_fasilitas" id="edit_id_fasilitas">
@@ -117,7 +117,7 @@
           <h5 class="modal-title" id="modalEditFasilitasLabel">Edit Fasilitas</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
           <div class="mb-3">
             <label for="edit_nama" class="form-label">Nama Fasilitas</label>
             <input type="text" class="form-control" id="edit_nama" name="nama" required>
