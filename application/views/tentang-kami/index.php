@@ -24,13 +24,13 @@
     </div>
   </div>
   <div class="about-right">
-  <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-1" />
+  <img src=" <?=base_url ('assets/img/helios.jpg') ?>" alt="Helios" class="foto-3" />
   </div>
 </section>
 <!-- SECTION 2: Foto di kiri, Deskripsi di kanan -->
 <section class="Deskripsi-container">
   <div class="desc-left">
-    <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-2" />
+    <img src=" <?=base_url ('assets/img/pintumasuk.jpeg') ?>" alt="Helios" class="foto-2" />
   </div>
   <div class="desc-right">
     <h2 class="judul-desc">
@@ -52,7 +52,7 @@
     </div>
   </div>
   <div class="visi-misi-right">
-  <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-3" />
+  <img src=" <?=base_url ('assets/img/nighthelios.jpg') ?>" alt="Helios" class="foto-1" />
   </div>
 </section>
   </body>
