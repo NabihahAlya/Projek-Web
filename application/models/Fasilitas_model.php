@@ -107,6 +107,7 @@ class Fasilitas_model extends CI_Model {
             }
         }
         $this->db->where('id_fasilitas', $id_fasilitas);
+        $this->db->delete('fasilitas');
         redirect('admin/fasilitas');
     }
 

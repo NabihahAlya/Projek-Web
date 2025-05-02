@@ -56,3 +56,4 @@ $route['hubungi-kami'] = 'hubungi';
 $route['hubungi-kami/(:any)'] = 'hubungi/$1'; 
 $route['tentang-kami'] = 'tentang';
 $route['tentang-kami/(:any)'] = 'tentang/$1'; 
+$route['admin'] = 'admin/admin';

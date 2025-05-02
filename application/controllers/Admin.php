@@ -163,10 +163,6 @@ class Admin extends CI_Controller {
             'foto' => $_FILES['foto'],
             'deleted_photos' => json_decode($this->input->post('deleted_photos'), true)
         ];
-        echo '<pre>';
-        var_dump($data);
-        echo '</pre>';
-        exit; // Stop di sini agar tidak lanjut ke json_encode
         $this->Layanan_model->update_layanan($data);
         redirect('admin/layanan');
     }

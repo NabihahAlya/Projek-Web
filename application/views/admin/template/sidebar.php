@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('admin/admin') ?>" class="nav-link">
+            <a href="<?= base_url('admin') ?>" class="nav-link">
               <span class="sidebar-icon">
                 <svg class="icon icon-xs me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12a5 5 0 10-5-5 5 5 0 005 5zm-7 9a7 7 0 0114 0H5zm15.7-5.3l-1-1a.999.999 0 00-1.4 1.4l1 1a.999.999 0 101.4-1.4zM19 15a1 1 0 10-1-1 1 1 0 001 1zm-4.3 4.3l-1 1a.999.999 0 101.4 1.4l1-1a.999.999 0 10-1.4-1.4z" />

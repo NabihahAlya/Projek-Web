@@ -37,7 +37,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('Admin/kamar') ?>" class="nav-link">
+            <a href="<?= base_url('admin/kamar') ?>" class="nav-link">
               <span class="sidebar-icon">
                 <svg class="icon icon-xs me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M4 7a2 2 0 012-2h12a2 2 0 012 2v5h-6v-1a2 2 0 00-4 0v1H4V7zm0 7h16v2H4v-2zm0 3h16v2H4v-2z" />
@@ -67,7 +67,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="<?= base_url('admin/admin') ?>" class="nav-link">
+            <a href="<?= base_url('admin') ?>" class="nav-link">
               <span class="sidebar-icon">
                 <svg class="icon icon-xs me-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 12a5 5 0 10-5-5 5 5 0 005 5zm-7 9a7 7 0 0114 0H5zm15.7-5.3l-1-1a.999.999 0 00-1.4 1.4l1 1a.999.999 0 101.4-1.4zM19 15a1 1 0 10-1-1 1 1 0 001 1zm-4.3 4.3l-1 1a.999.999 0 101.4 1.4l1-1a.999.999 0 10-1.4-1.4z" />

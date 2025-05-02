@@ -10,9 +10,11 @@
   </head>
   <body> <div class="container-utama"></div>
     <!-- SECTION 1: Kontak di kiri, Foto di kanan -->
+    <section class="judul-container" > 
+  <h1 class="judul-top">Tentang Kami</h1>
+</section>
 <section class="tentang-kami-container">
   <div class="about-left">
-    <h1 class="judul-top">Tentang Kami</h1>
     <div class="contact">
       <p><i class="fas fa-map-marker-alt"></i> Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111</p>
       <p><i class="fas fa-phone"></i> +62 812-1111-5787</p>
@@ -22,41 +24,35 @@
     </div>
   </div>
   <div class="about-right">
-    <img src="<?= base_url('assets/img/kamarhelios.jpeg')?>" class="foto-1" />
+  <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-1" />
   </div>
 </section>
-
 <!-- SECTION 2: Foto di kiri, Deskripsi di kanan -->
 <section class="Deskripsi-container">
   <div class="desc-left">
-    <img src="<?= base_url('assets/img/kamarhelios.jpeg')?>" alt="Helios" class="foto-2" />
+    <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-2" />
   </div>
-  
   <div class="desc-right">
-    <h1 class="judul-desc">
+    <h2 class="judul-desc">
       Deskripsi
-    </h1>
+    </h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptate voluptates quae enim, iste quia recusandae ex impedit porro? Illo laudantium iure optio adipisci rerum repellat vero quam labore facilis?
-      merupakan hotel bintang 4 yang menghadirkan kombinasi sempurna antara kenyamanan modern dan kehangatan budaya lokal.
-      Dengan desain elegan dan fasilitas lengkap, hotel ini berlokasi strategis dekat stasiun kota Malang dan menjadi pilihan ideal untuk liburan maupun bisnis.
+    Hotel Helios Malang merupakan hotel yang berlokasi strategis di pusat Kota Malang, hanya lima menit dari Stasiun Kota Baru dan Tugu Balaikota. Menawarkan kenyamanan menginap dengan suasana tenang di tengah kota, hotel ini menghadirkan 32 kamar dengan pilihan tipe Deluxe, Family, dan Executive, yang dirancang untuk memenuhi kebutuhan berbagai jenis tamu, baik wisatawan maupun pelaku perjalanan bisnis. Mengusung konsep desain vintage dengan sentuhan modern, Hotel Helios juga menampilkan berbagai koleksi motor klasik yang menjadi daya tarik tersendiri bagi para pengunjung. Fasilitas penunjang seperti restoran, kafe, dan area gym terbuka untuk umum, menjadikan hotel ini tidak hanya sebagai tempat menginap, tetapi juga ruang berkumpul yang nyaman dan inspiratif. Dengan pelayanan yang ramah dan suasana yang khas, Hotel Helios Malang siap memberikan pengalaman menginap yang berkesan di jantung Kota Malang.
     </p>
-    
   </div>
 </section>
-
 <section class="visi-misi-container">
   <div class="visi-misi-left">
-    <h1 class="judul-visi-misi">Visi Misi</h1>
-    <div class="contact">
+    <h2 class="judul-visi-misi">Sejarah</h2>
+    <div class="visi-misi">
       <p>
-        merupakan hotel bintang 4 yang menghadirkan kombinasi sempurna antara kenyamanan modern dan kehangatan budaya lokal.
-        Dengan desain elegan dan fasilitas lengkap, hotel ini berlokasi strategis dekat stasiun kota Malang dan menjadi pilihan ideal untuk liburan maupun bisnis.
+      Hotel Helios Malang didirikan pada tahun 1958 dan berlokasi strategis di pusat Kota Malang. 
+      Awalnya merupakan losmen milik warga Belanda, properti ini kemudian dikembangkan menjadi hotel dan terus bertransformasi mengikuti kebutuhan wisatawan.  Hotel Helios menjadi tujuan utama turis asing karena menyediakan layanan Tour & Travel ke Tempat Wisata, Dengan mengusung konsep desain vintage yang dipadukan dengan gaya modern, hotel ini menampilkan berbagai koleksi kendaraan klasik. Kombinasi antara kenyamanan, desain yang khas, serta lokasi yang strategis menjadikan Hotel Helios Malang sebagai salah satu pilihan menarik bagi wisatawan yang berkunjung ke kota ini.
       </p>
     </div>
   </div>
   <div class="visi-misi-right">
-    <img src="<?= base_url('assets/img/kamarhelios.jpeg')?>" alt="Helios" class="foto-3" />
+  <img src=" <?=base_url ('assets/img/kamarhelios.jpeg') ?>" alt="Helios" class="foto-3" />
   </div>
 </section>
   </body>

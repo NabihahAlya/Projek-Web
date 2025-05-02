@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/header.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section_kamar.css'); ?>"/>
-    <link rel="stylesheet" href="<?= base_url('assets/css/kamar.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section-best.css'); ?>"/>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />

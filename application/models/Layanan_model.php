@@ -104,6 +104,7 @@ class Layanan_model extends CI_Model {
             }
         }
         $this->db->where('id_layanan', $id_layanan);
+        $this->db->delete('layanan');
         redirect('admin/layanan');
     }
 
