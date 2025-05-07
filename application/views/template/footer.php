@@ -1,17 +1,17 @@
-    <footer class="footer pt-5 pb-5">
+<footer class="footer pt-5 pb-5">
       <div class="container c-footer">
         <div class="row">
           <div class="col-md-3 col-sm-6 text-center text-md-start mb-4 mb-md-0">
             <img src="<?= base_url('assets/img/logo.png')?>" alt="Helios Hotel Logo" class="footer-logo" />
           </div>
 
-          <div class="col-md-2 col-sm-6 mb-4 mb-md-0">
+          <div class="nav col-md-2 col-sm-6 mb-4 mb-md-0">
             <ul class="footer-menu list-unstyled">
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#">Tentang Kami</a></li>
-              <li><a href="#">Kamar & Fasilitas</a></li>
-              <li><a href="#">Hubungi Kami</a></li>
-              <li><a href="#">Login</a></li>
+              <li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
+              <li><a href="<?= base_url('tentang-kami') ?>">Tentang Kami</a></li>
+              <li><a href="<?= base_url('kamar') ?>">Kamar </a></li>
+              <li><a href="<?= base_url('beranda/kritik') ?>">Kritik dan Saran</a></li>
+              <li><a href="<?= base_url('auth') ?>">Login</a></li>
             </ul>
           </div>
 
@@ -36,7 +36,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class=" map col-md-3 col-sm-6">
             <h6 class="text-uppercase mb-3">Lokasi Kami</h6>
             <div class="map-wrapper">
               <iframe 
@@ -55,5 +55,6 @@
     <script src="<?= base_url('assets/js/section_best.js')  ?>"></script>
     <script src="<?= base_url('assets/js/section_kamar.js')  ?>"></script>
     <script src="<?= base_url('assets/js/kamar.js')  ?>"></script>
+    <script src="<?= base_url('assets/js/kritik_saran.js')  ?>"></script>
   </body>
 </html>

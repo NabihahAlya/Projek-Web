@@ -10,17 +10,19 @@
   </head>
   <body> <div class="container-utama"></div>
     <!-- SECTION 1: Kontak di kiri, Foto di kanan -->
-    <section class="judul-container" > 
-  <h1 class="judul-top">Tentang Kami</h1>
-</section>
 <section class="tentang-kami-container">
   <div class="about-left">
     <div class="contact">
+      <h2>Helios Hotel Malang</h2>
+      <p>Kami Siap Membantu Anda!
+      Jangan ragu untuk menghubungi kami kapan saja. Tim kami dengan senang hati akan membantu kebutuhan Anda.</p>
       <p><i class="fas fa-map-marker-alt"></i> Jl. Patimura No.37, Klojen, Kota Malang, Jawa Timur 65111</p>
       <p><i class="fas fa-phone"></i> +62 812-1111-5787</p>
       <p><i class="fas fa-envelope"></i><a href="mailto:marketing.helios58@gmail.com"> marketing.helios58@gmail.com</a></p>
       <p><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=6281211115787"> +62 812-1111-5787</a></p>
       <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/heliosmalang"> @heliosmalang</a></p>
+      <p> Temukan kenyamanan dan pelayanan terbaik di <strong>Helios Hotel Malang</strong>.  
+      Reservasi sekarang dan jadikan kunjungan Anda tak terlupakan!</p>
     </div>
   </div>
   <div class="about-right">

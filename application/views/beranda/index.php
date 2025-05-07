@@ -1,5 +1,4 @@
- 
-  <section id="tentang-kami">
+<section id="tentang-kami">
   <h2 class="judul">Tentang Kami</h2>
   <div class="tentang-kami-container">
     <div class="left">
@@ -13,7 +12,6 @@
       </div>
     </div>
     <div class="right">
-      <h2>Deskripsi</h2>
       <div class="desc">
         <p>
           Helios Hotel merupakan hotel bintang 4 yang menghadirkan kombinasi sempurna antara kenyamanan modern dan kehangatan budaya lokal. Mengusung konsep desain elegan dengan sentuhan tradisional yang menawan, Hotel Helios memberikan
@@ -59,7 +57,7 @@
         </ul>
         <div class="card-body d-flex justify-content-between">
           <span class="price">Mulai dari <strong>Rp 300.000</strong>/malam</span>
-          <a href="#" class="btn custom-btn">Pesan Sekarang</a>
+          <a href="https://api.whatsapp.com/send?phone=6281211115787" class="btn custom-btn">Pesan Sekarang</a>
         </div>
       </div>
 
@@ -95,7 +93,7 @@
         </ul>
         <div class="card-body d-flex justify-content-between">
           <span class="price">Mulai dari <strong>Rp 400.000</strong>/malam</span>
-          <a href="#" class="btn custom-btn">Pesan Sekarang</a>
+          <a href="https://api.whatsapp.com/send?phone=6281211115787" class="btn custom-btn">Pesan Sekarang</a>
         </div>
       </div>
 
@@ -131,7 +129,7 @@
         </ul>
         <div class="card-body d-flex justify-content-between">
           <span class="price">Mulai dari <strong>Rp 525.000</strong>/malam</span>
-          <a href="#" class="btn custom-btn">Pesan Sekarang</a>
+          <a href="https://api.whatsapp.com/send?phone=6281211115787" class="btn custom-btn">Pesan Sekarang</a>
         </div>
       </div>
     </div>
@@ -155,7 +153,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="kamar.php" class="btn custom-btn">Lihat Semua Kamar</a>
+      <a href="<?= base_url('kamar')?>" class="btn custom-btn">Lihat Semua Kamar</a>
     </div>
   </div>
 </section>
@@ -264,7 +262,9 @@
           "Rasakan Keajaiban Bromo, Dapatkan Pengalaman Tak Terlupakan!" <br />Ingin merasakan sensasi matahari terbit di Bromo? Bergabunglah dalam perjalanan penuh petualangan dan nikmati keindahan alam yang memukau. Jangan lewatkan
           kesempatan untuk menjelajahi keajaiban Indonesia!
         </p>
-        <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
+        <a href="<?= base_url('wisata')?>"
+          <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
+        </a>
       </div>
     </div>
 
@@ -274,7 +274,9 @@
         <div class="h-90 p-5 text-white bg-dark rounded-3 bg-image-1 animate-slide-right" id="card-left">
           <h2 class="segoe">Explore Tumpak Sewu</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis atque veniam, voluptas nihil ipsam explicabo totam et alias dicta autem animi fugiat laborum minima labore eligendi in? Asperiores, maxime?</p>
-          <button class="btn btn-sml custom-btn" type="button">Lihat Selengkapnya</button>
+          <a href="<?= base_url('wisata')?>"
+            <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
+          </a>
         </div>
       </div>
       <!-- Card kanan dengan animasi slide dari kiri -->

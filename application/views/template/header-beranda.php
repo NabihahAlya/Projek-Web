@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/header.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/footer.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section_kamar.css'); ?>"/>
-    <link rel="stylesheet" href="<?= base_url('assets/css/section-best.css'); ?>"/>
+    <link rel="stylesheet" href="<?= base_url('assets/css/section_best.css'); ?>"/>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/logo.png') ?>" />
@@ -76,9 +76,5 @@
         <li class="navi">
           <a href="<?=base_url('beranda/kritik')?>"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
         </li>
-        <li class="navi">
-          <a href="<?=base_url('auth')?>"><i class="fa-solid fa-user"></i></a>
-        </li>
       </ul>
-    </nav>
     </nav>

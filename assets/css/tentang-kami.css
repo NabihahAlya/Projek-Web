@@ -1,111 +1,192 @@
+/* ====== RESET DAN DASAR ====== */
+*,
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 150px;
+}
+
+body {
+	padding-top: 70px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	max-width: 100%;
+}
+
+/* ====== JUDUL HALAMAN ====== */
 .judul-container {
 	color: #661f1f;
 	text-align: left;
 	max-width: 1200px;
 	margin: auto;
 }
-.Deskripsi-container,
-.tentang-kami-container,
-.visi-misi-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	max-width: 1200px;
-	margin: 50px auto;
-	gap: 30px;
-}
-/* Bagian kiri */
-.about-left,
-.desc-left,
-.visi-misi-left {
-	flex: 1;
-}
-/* Bagian kanan */
-.about-right,
-.desc-right,
-.visi-misi-right {
-	flex: 1;
-}
-.judul-top {
-	color: #661f1f;
-	margin-bottom: -60px;
-	text-align: left;
-}
-.judul-desc {
-	color: #661f1f;
-	margin-bottom: 23px;
-	text-align: left;
-}
+
+.judul-top,
+.judul-desc,
 .judul-visi-misi {
 	color: #661f1f;
 	margin-bottom: 23px;
 	text-align: left;
 }
+
+/* ====== SECTION UMUM ====== */
+.tentang-kami-container,
+.Deskripsi-container,
+.visi-misi-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 85%;
+	margin: 1em auto;
+	gap: 1em;
+	padding: 2em;
+}
+
+/* ====== BAGIAN KIRI & KANAN ====== */
+.about-left,
+.desc-left,
+.visi-misi-left,
+.about-right,
+.desc-right,
+.visi-misi-right {
+	flex: 1;
+}
+
+/* ====== CONTACT INFO ====== */
 .contact {
-	border-bottom: 1px solid black;
 	font-size: 18px;
 	line-height: 1.8;
 	color: #000;
 	text-align: justify;
-	margin-left: -37px;
-	margin-right: auto;
-	margin-top: 50px;
+	margin-top: 20px;
 }
-.desc-right p {
-	font-size: 18px;
-	color: black;
-	line-height: 1.6;
-	margin-bottom: auto;
-	text-align: justify;
-	margin-left: auto;
-	margin-right: 5px;
+
+.contact p {
+	margin-left: -20px;
 }
-.visi-misi {
-	font-size: 18px;
-	color: black;
-	line-height: 1.6;
-	margin-bottom: auto;
-	text-align: justify;
-	margin-right: auto;
+
+.contact i {
+	margin-right: 20px;
+	color: #661f1f;
 }
+
+.contact a {
+	color: #000;
+	text-decoration: none;
+}
+
 .contact a:hover {
 	color: #661f1f;
 }
-.foto-1 {
-	background-color: white;
-	padding: 0.5rem;
-	max-width: 630px;
-	border-radius: 20px;
-	object-fit: cover;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	border: 1px solid #eee;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	margin-left: 6%;
-	margin-right: auto;
-	margin-bottom: auto;
-	margin-top: 10px;
+
+/* ====== DESKRIPSI & VISI MISI ====== */
+.desc-right p,
+.visi-misi p {
+	font-size: 18px;
+	color: black;
+	line-height: 1.6;
+	text-align: justify;
 }
+
+/* ====== GAMBAR ====== */
+.foto-1,
 .foto-2,
 .foto-3 {
 	background-color: white;
 	padding: 0.5rem;
-	max-width: 630px;
+	max-width: 100%;
 	border-radius: 20px;
 	object-fit: cover;
-
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	border: 1px solid #eee;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: auto;
-	width: 100%;
-	height: 100%;
 }
-/* Efek Hover */
+
+.foto-1 {
+	margin: 10px auto;
+	display: block;
+}
+
+.foto-2,
+.foto-3 {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+/* ====== HOVER EFFECT ====== */
 .foto-1:hover,
 .foto-2:hover,
 .foto-3:hover {
 	transform: scale(1.02);
 	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Tablet (≤ 768px) */
+@media (max-width: 992px) {
+	body {
+		padding-top: 1em;
+	}
+}
+@media (max-width: 768px) {
+	.tentang-kami-container,
+	.Deskripsi-container,
+	.visi-misi-container {
+		flex-direction: column;
+		padding: 0 15px;
+	}
+
+	.judul-container {
+		padding: 0 15px;
+	}
+
+	.desc-right p,
+	.visi-misi p,
+	.contact p {
+		font-size: 16px;
+	}
+
+	.contact p {
+		margin-left: 0;
+	}
+
+	body {
+		padding-top: 1em;
+	}
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+	.tentang-kami-container,
+	.Deskripsi-container,
+	.visi-misi-container {
+		gap: 20px;
+	}
+
+	.desc-right p,
+	.visi-misi p,
+	.contact p {
+		font-size: 14px;
+	}
+
+	.judul-top,
+	.judul-desc,
+	.judul-visi-misi {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.foto-1,
+	.foto-2,
+	.foto-3 {
+		border-radius: 12px;
+	}
+
+	body {
+		padding-top: 1em !important;
+	}
 }

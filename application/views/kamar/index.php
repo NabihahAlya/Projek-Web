@@ -55,7 +55,9 @@
                     <div class="price">
                         Rp. <?= number_format($data['price'], 0, ',', '.')?> / malam
                     </div>
-                    <button class="btn custom-btn booking-btn">Pesan Sekarang</button>
+                    <a href="https://api.whatsapp.com/send?phone=6281211115787"
+                        <button class="btn custom-btn booking-btn">Pesan Sekarang</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -63,8 +65,7 @@
 </div>
 
 <script>
-    var baseUrl = '<?= base_url() ?>';
-    const images = <?php echo json_encode($images); ?>;
+    const images = <?= json_encode($images) ?>;
     const roomImages = {};
 
     for (let type_kamar in images) {

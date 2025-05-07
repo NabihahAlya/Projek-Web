@@ -16,8 +16,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />
     <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/logo.png') ?>" />
-
-    <script>const base_url = "<?= base_url(); ?>";</script>
+    <script>const baseUrl = "<?= base_url() ?>"; </script>
   </head>
   <body>
     <header>
@@ -29,7 +28,6 @@
         </div>
       </div>
     </header>
-
     <nav>
     <ul>
     <li class="navi">
@@ -50,12 +48,5 @@
         <li class="navi">
           <a href="<?=base_url('beranda/kritik')?>"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
         </li>
-        <li class="navi">
-          <a href="<?=base_url('auth')?>"><i class="fa-solid fa-user"></i></a>
-        </li>
       </ul>
     </nav>
-
-    <script src="header.js"></script>
-  </body>
-</html>

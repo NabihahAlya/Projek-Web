@@ -1,263 +1,454 @@
 *,
 html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding-top: 150px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scroll-padding-top: 150px;
 }
 
 h2,
 h3 {
-  color: #733d0e;
-  font-size: x-large;
-  text-align: center;
+	color: #733d0e;
+	font-size: x-large;
+	text-align: center;
 }
 
 h3 {
-  font-size: large;
-  font-weight: normal;
+	font-size: large;
+	font-weight: normal;
 }
 
 body {
-  padding-top: 70px;
-  margin: 0;
+	padding-top: 70px;
+	margin: 0;
+	max-width: 100%;
 }
 
 /* --------------------kamar--------------------- */
 section.section-kamar {
-  padding: 2em;
-  background-color: rgba(247, 245, 243, 0.5);
+	padding: 2em;
+	background-color: rgba(247, 245, 243, 0.5);
 }
 
 /* -----------------tentang kami----------- */
 
 .tentang-kami-container {
-  display: flex;
-  max-width: 1300px;
-  margin: 30px auto;
-  padding: 0 40px;
+	display: flex;
+	max-width: 1300px;
+	margin: 30px auto;
+	padding: 0 40px;
 }
 
 .left {
-  width: 50%;
-  padding-right: 40px;
-  border-right: 1px solid #ccc;
+	width: 50%;
+	padding-right: 40px;
+	border-right: 1px solid #ccc;
+	text-align: justify;
 }
 
 .right {
-  width: 50%;
-  padding-left: 40px;
-  text-align: justify;
+	width: 50%;
+	padding-left: 40px;
+	text-align: justify;
 }
 
-/* .contact p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-left: 5px;
-} */
+.contact p {
+	font-size: 18px;
+	line-height: 1.6;
+	margin-left: 5px;
+}
 
 .contact i {
-  margin-right: 18px;
-  color: #661f1f;
+	margin-right: 18px;
+	color: #661f1f;
 }
 
 .contact a {
-  color: #000000;
-  text-decoration: none;
+	color: #000000;
+	text-decoration: none;
 }
 
 .desc p,
 .contact p,
 .right p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin: 60px auto;
-  margin-bottom: 13px;
-  margin-top: 0;
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 60px auto;
+	margin-bottom: 13px;
+	margin-top: 0;
 }
 
 .desc a {
-  color: #733d0e;
+	color: #733d0e;
 }
 
 /* -----------------fasilitas----------- */
 
 #fasilitas {
-  padding: 2em;
-  text-align: center;
+	padding: 2em;
+	text-align: center;
 }
 
 .daftar-fasilitas,
 .daftar-layanan {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin: 2em auto;
-  width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	margin: 2em auto;
+	width: 75%;
 }
 
 .daftar-fasilitas h3,
 .daftar-layanan h3 {
-  color: #000000;
+	color: #000000;
 }
 
 .fasilitas-item,
 .layanan-item {
-  background-color: white;
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 0 0 calc(25% - 20px); /* 4 per baris */
-  box-sizing: border-box;
-  text-align: center;
-  height: 200px;
-  display: grid;
-  align-items: center;
-  text-decoration: none;
-  color: #733d0e;
+	background-color: white;
+	padding: 1.5em;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	width: 200px;
+	min-height: 200px;
+	display: grid;
+	align-items: center;
+	text-decoration: none;
+	color: #733d0e;
+}
+
+.fasilitas-item i,
+.layanan-item i {
+	font-size: 3rem;
+	margin-bottom: 10px;
 }
 
 .fasilitas-item,
 .layanan-item {
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .fasilitas-item:hover,
 .layanan-item:hover {
-  background-color: rgba(247, 245, 243, 0.5);
-  color: #f26c07;
-  transform: scale(1.05);
+	background-color: rgba(247, 245, 243, 0.5);
+	color: #f26c07;
+	transform: scale(1.05);
 }
 
 .pop-up {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 1010;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(8px);
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1010;
 }
 
 .box-pop-up {
-  position: relative;
-  width: 80%;
-  max-width: 900px;
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  overflow: hidden;
+	position: relative;
+	width: 80%;
+	max-width: 900px;
+	background: white;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden;
 }
 
 .close-icon {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 24px;
-  cursor: pointer;
-  color: #ffffff;
-  z-index: 15;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	font-size: 24px;
+	cursor: pointer;
+	color: #ffffff;
+	z-index: 15;
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	transition: transform 0.3s ease;
 }
 
 .close-icon:hover {
-  transform: scale(1.2);
-  color: #f1780f;
+	transform: scale(1.2);
+	color: #f1780f;
 }
 
 .carousel-container {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+	box-sizing: border-box;
 }
 
 .carousel-slide {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide img {
-  min-width: 100%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	flex-shrink: 0;
 }
 
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	z-index: 10;
 }
 
 .carousel-btn:hover {
-  background-color: rgba(241, 120, 15, 0.8);
-  transform: translateY(-50%) scale(1.1);
+	background-color: rgba(241, 120, 15, 0.8);
+	transform: translateY(-50%) scale(1.1);
 }
 
 .carousel-btn.prev {
-  left: 10px;
+	left: 10px;
 }
 
 .carousel-btn.next {
-  right: 10px;
+	right: 10px;
 }
 
 .popup-detail {
-  padding: 1rem 2rem 2rem;
+	padding: 1rem 2rem 2rem;
 }
 
 .popup-detail h3 {
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
-  color: #733d0e;
+	margin: 0.5rem 0;
+	font-size: 1.5rem;
+	color: #733d0e;
 }
 
 .popup-detail p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
+	font-size: 1rem;
+	color: #555;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.daftar-fasilitas,
+	.daftar-layanan {
+		width: 100% !important;
+		flex-wrap: nowrap;
+	}
+
+	h3 {
+		font-size: 0.8em !important;
+	}
+	.fasilitas-item,
+	.layanan-item {
+		padding: 0;
+		width: 130px;
+		min-height: 130px;
+	}
+
+	.fasilitas-item i,
+	.layanan-item i {
+		font-size: 2.5rem;
+		margin-bottom: 5px;
+	}
+	.carousel-container {
+		height: auto;
+		max-height: 300px; /* Batas maksimal di desktop */
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.carousel-slide {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.right {
+		padding-left: 20px;
+	}
+
+	.left {
+		padding-right: 20px;
+	}
+
+	.desc p,
+	.contact p,
+	.right p {
+		font-size: 0.8em;
+		text-align: justify;
+	}
+
+	.contact i {
+		margin-right: 1px;
+	}
+}
+
+@media (max-width: 479px) {
+	.daftar-fasilitas,
+	.daftar-layanan {
+		width: 100% !important;
+		flex-wrap: nowrap;
+	}
+
+	h3 {
+		font-size: 0.8em !important;
+	}
+	.fasilitas-item,
+	.layanan-item {
+		padding: 0;
+		width: 110px;
+		min-height: 110px;
+	}
+
+	.fasilitas-item i,
+	.layanan-item i {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	.carousel-container {
+		height: auto;
+		max-height: 300px; /* Batas maksimal di desktop */
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.carousel-slide {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.right {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.left {
+		width: 100%;
+		padding-right: 0;
+		border-right: 0px solid #ccc;
+	}
+
+	.desc p,
+	.contact p,
+	.right p {
+		font-size: 0.8em;
+		text-align: justify;
+	}
+
+	.contact i {
+		margin-right: 10px;
+	}
+
+	.tentang-kami-container {
+		display: block;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+	.daftar-fasilitas,
+	.daftar-layanan {
+		width: 100% !important;
+		flex-wrap: nowrap;
+	}
+
+	h3 {
+		font-size: 0.8em !important;
+	}
+	.fasilitas-item,
+	.layanan-item {
+		padding: 1em;
+		width: 100px;
+		min-height: 100px;
+	}
+
+	.fasilitas-item i,
+	.layanan-item i {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	.carousel-container {
+		height: auto;
+		max-height: 300px; /* Batas maksimal di desktop */
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.carousel-slide {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.right {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.left {
+		width: 100%;
+		padding-right: 0;
+		border-right: 0px solid #ccc;
+	}
+
+	.desc p,
+	.contact p,
+	.right p {
+		font-size: 0.8em;
+		text-align: justify;
+	}
+
+	.contact i {
+		margin-right: 10px;
+	}
+
+	.tentang-kami-container {
+		display: block;
+	}
 }
 
 /* --------------------Our Best Service--------------------- */
 section.section-best {
-  padding: 2em;
-  background-color: rgba(247, 245, 243, 0.5);
-  padding-bottom: 3em;
+	padding: 2em;
+	background-color: rgba(247, 245, 243, 0.5);
+	padding-bottom: 3em;
 }
 
 .custom-btn {
-  background-color: #f1780f; /* Orange terang */
-  color: white;
-  border: none;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+	background-color: #f1780f; /* Orange terang */
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
 }
 
 .custom-btn:hover {
-  background-color: #f5a623; /* Warna kuning lebih terang */
-  color: #733d0e; /* Teks berwarna coklat tua */
+	background-color: #f5a623; /* Warna kuning lebih terang */
+	color: #733d0e; /* Teks berwarna coklat tua */
 }
 
 .row.align-items-md-stretch.h-90 h2 {
-  color: #ffffff;
-  text-align: left;
+	color: #ffffff;
+	text-align: left;
 }
