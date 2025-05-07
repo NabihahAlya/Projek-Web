@@ -288,5 +288,74 @@
         </div>
       </div>
     </div>
+    <!-- Tambahkan setelah penutup </div> dari div.row -->
+    <div class="card-scroll-buttons">
+      <button class="scroll-btn scroll-left"><i class="fas fa-chevron-left"></i> Prev</button>
+      <button class="scroll-btn scroll-right">Next <i class="fas fa-chevron-right"></i></button>
+    </div>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Only run on mobile screens
+    if (window.innerWidth <= 768) {
+      const cardRow = document.querySelector('.section-best .row.align-items-md-stretch');
+      const scrollLeftBtn = document.querySelector('.scroll-btn.scroll-left');
+      const scrollRightBtn = document.querySelector('.scroll-btn.scroll-right');
+      const buttonContainer = document.querySelector('.card-scroll-buttons');
+      
+      // Show scroll buttons container on mobile
+      buttonContainer.style.display = 'flex';
+      
+      // Initial check for scroll position
+      updateScrollButtonVisibility();
+      
+      // Function to update the visibility of scroll buttons
+      function updateScrollButtonVisibility() {
+        // Hide left button if at the beginning
+        if (cardRow.scrollLeft <= 10) {
+          scrollLeftBtn.classList.add('hidden');
+        } else {
+          scrollLeftBtn.classList.remove('hidden');
+        }
+        
+        // Hide right button if at the end
+        const maxScrollLeft = cardRow.scrollWidth - cardRow.clientWidth - 10;
+        if (cardRow.scrollLeft >= maxScrollLeft) {
+          scrollRightBtn.classList.add('hidden');
+        } else {
+          scrollRightBtn.classList.remove('hidden');
+        }
+        
+        // Hide entire button container if there's nothing to scroll
+        if (cardRow.scrollWidth <= cardRow.clientWidth) {
+          buttonContainer.style.display = 'none';
+        } else {
+          buttonContainer.style.display = 'flex';
+        }
+      }
+      
+      // Scroll left when left button is clicked
+      scrollLeftBtn.addEventListener('click', function() {
+        cardRow.scrollBy({
+          left: -cardRow.offsetWidth * 0.85,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Scroll right when right button is clicked
+      scrollRightBtn.addEventListener('click', function() {
+        cardRow.scrollBy({
+          left: cardRow.offsetWidth * 0.85,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Update button visibility when scrolling
+      cardRow.addEventListener('scroll', updateScrollButtonVisibility);
+      
+      // Update on window resize as well
+      window.addEventListener('resize', updateScrollButtonVisibility);
+    }
+  });
+  </script>
 </section>

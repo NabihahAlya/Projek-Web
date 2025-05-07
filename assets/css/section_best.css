@@ -39,11 +39,272 @@
 	font-family: Segoe Print;
 }
 
-@media (min-width: 768px) {
-	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
+/* Add to section_best.css */
+
+/* Style for scroll buttons */
+.card-scroll-buttons {
+	display: none; /* Hidden by default, will be shown in JS when needed */
+	justify-content: center;
+	gap: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+  }
+  
+  .scroll-btn {
+	padding: 5px 15px;
+	background-color: #4e2909;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .scroll-btn i {
+	margin: 0 5px;
+  }
+  
+  .scroll-btn:hover {
+	background-color: #6a3c14;
+  }
+  
+  .scroll-btn:active {
+	transform: translateY(1px);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  /* Hide buttons when not needed */
+  .scroll-btn.hidden {
+	opacity: 0;
+	pointer-events: none;
+	transform: scale(0.8);
+  }
+
+/* Add these responsive styles to your section_best.css file */
+
+/* Base styles remain the same */
+
+/* Media queries for responsiveness */
+
+/* For screens up to 1024px */
+@media (max-width: 1024px) {
+	#jumbotron {
+	  height: 450px;
 	}
-}
+	
+	.section-best .display-3 {
+	  font-size: 2.5rem;
+	}
+	
+	.section-best .fs-5 {
+	  font-size: 1rem !important;
+	}
+	
+	.section-best .h-90 {
+	  height: 400px;
+	}
+  }
+  
+  /* For screens up to 900px */
+  @media (max-width: 900px) {
+	#jumbotron {
+	  height: 450px;
+	  padding: 0px 20px !important;
+	}
+	
+	.section-best .display-3 {
+	  font-size: 2.2rem;
+	}
+	
+	.section-best .container-fluid {
+	  padding-top: 3rem !important;
+	  padding-bottom: 3rem !important;
+	}
+	
+	.section-best .h-90 {
+	  height: 350px;
+	}
+	
+	.section-best .p-5 {
+	  padding: 1.5rem !important;
+	}
+  }
+  
+  /* For screens up to 768px */
+  @media (max-width: 768px) {
+	#jumbotron {
+	  height: 370px;
+	  margin-bottom: 1.5rem !important; /* Add space between main jumbotron and sub jumbotrons */
+	}
+	
+	.section-best .display-3 {
+	  font-size: 2rem;
+	}
+	
+	.section-best .fs-5 {
+	  font-size: 0.9rem !important;
+	  width: 100% !important;  /* Override the col-md-6 width on mobile */
+	}
+	
+	/* Setup for proper overflow scrolling */
+	.section-best .row.align-items-md-stretch {
+	  display: flex;
+	  flex-wrap: nowrap;
+	  overflow-x: auto;
+	  scroll-behavior: smooth; /* For smooth scrolling */
+	  padding-bottom: 10px;
+	  -webkit-overflow-scrolling: touch; /* For iOS smooth scrolling */
+	  scrollbar-width: none; /* Hide scrollbar for Firefox */
+	  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+	}
+	
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.section-best .row.align-items-md-stretch::-webkit-scrollbar {
+	  display: none;
+	}
+	
+	.section-best .col-md-6 {
+	  flex: 0 0 85%;
+	  max-width: 85%;
+	  margin-right: 15px;
+	  margin-bottom: 1.5rem; /* Increased spacing between sub jumbotrons */
+	}
+	
+	.section-best .h-90 {
+	  height: 270px;
+	}
+	
+	/* Adjust background positioning for better mobile viewing */
+	.bg-image-main, .bg-image-1, .bg-image-2 {
+	  background-position: center center;
+	  background: linear-gradient(to right, rgba(78, 41, 9, 0.8), rgba(78, 41, 9, 0.6)), 
+				  url("../img/bromo.jpg") no-repeat center center;
+	  background-size: cover;
+	}
+	
+	.bg-image-1 {
+	  background: linear-gradient(to right, rgba(78, 41, 9, 0.8), rgba(78, 41, 9, 0.6)),
+				  url("../img/tumpak-sewu.jpg") no-repeat center center;
+	  background-size: cover;
+	}
+	
+	.bg-image-2 {
+	  background: linear-gradient(to right, rgba(78, 41, 9, 0.8), rgba(78, 41, 9, 0.6)),
+				  url("../img/ijen.jpg") no-repeat center center;
+	  background-size: cover;
+	}
+	
+	/* Style for scroll buttons */
+	.card-scroll-buttons {
+	  display: flex;
+	  justify-content: center;
+	  gap: 10px;
+	  margin-top: 10px;
+	  margin-bottom: 20px;
+	}
+	
+	.scroll-btn {
+	  padding: 5px 15px;
+	  background-color: #4e2909;
+	  color: white;
+	  border: none;
+	  border-radius: 20px;
+	  cursor: pointer;
+	  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+	
+	.scroll-btn i {
+	  margin: 0 5px;
+	}
+	
+	.scroll-btn:hover {
+	  background-color: #6a3c14;
+	}
+	
+	.scroll-btn:active {
+	  transform: translateY(1px);
+	  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	}
+  }
+  
+  /* For screens up to 576px */
+  @media (max-width: 576px) {
+	#jumbotron {
+	  height: auto;
+	  min-height: 300px;
+	}
+	
+	.section-best .display-3 {
+	  font-size: 1.8rem;
+	}
+	
+	.section-best .container-fluid {
+	  padding-top: 2rem !important;
+	  padding-bottom: 2rem !important;
+	}
+	
+	.section-best .btn-lg {
+	  padding: 0.5rem 1rem;
+	  font-size: 1rem;
+	}
+	
+	.section-best .h-90 {
+	  height: 250px;
+	}
+	
+	.section-best .p-5 {
+	  padding: 1rem !important;
+	}
+  }
+  
+  /* For screens up to 480px */
+  @media (max-width: 480px) {
+	.section-best .display-3 {
+	  font-size: 1.5rem;
+	}
+	
+	.section-best .fs-5 {
+	  font-size: 0.85rem !important;
+	}
+	
+	.section-best .h-90 {
+	  height: 220px;
+	}
+	
+	.section-best .p-5 {
+	  padding: 0.75rem !important;
+	}
+	
+	.section-best h2 {
+	  font-size: 1.5rem;
+	}
+	
+	.section-best p {
+	  font-size: 0.85rem;
+	}
+	
+	.section-best .btn-lg, .section-best .btn-sml {
+	  padding: 0.4rem 0.8rem;
+	  font-size: 0.9rem;
+	}
+	
+	/* Adjust scrollable cards for smallest screens */
+	.section-best .col-md-6 {
+	  flex: 0 0 95%; /* Each card takes almost full viewport width */
+	}
+	
+	/* Further increase spacing for visual clarity */
+	#jumbotron {
+	  margin-bottom: 2rem !important;
+	}
+  }
 
 /* Kelas untuk animasi */
 .animate-fade-in {

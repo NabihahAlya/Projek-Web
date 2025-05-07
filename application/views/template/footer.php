@@ -52,9 +52,14 @@
     <script src="<?= base_url('include/bootstrap/js/bootstrap.bundle.min.js')  ?>"></script>
     <script src="<?= base_url('assets/js/header.js')  ?>"></script>
     <script src="<?= base_url('assets/js/main.js')  ?>"></script>
-    <script src="<?= base_url('assets/js/section_best.js')  ?>"></script>
-    <script src="<?= base_url('assets/js/section_kamar.js')  ?>"></script>
-    <script src="<?= base_url('assets/js/kamar.js')  ?>"></script>
-    <script src="<?= base_url('assets/js/kritik_saran.js')  ?>"></script>
+    <?php
+    if(!empty($f_js)){
+      foreach($f_js as $file) {
+    ?>
+      <script src="<?= base_url('assets/js/' . $file . '.js')  ?>"></script>
+    <?php
+      }
+    }
+    ?>
   </body>
 </html>

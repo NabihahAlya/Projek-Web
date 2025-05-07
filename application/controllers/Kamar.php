@@ -36,9 +36,10 @@ class Kamar extends CI_Controller {
         }
 
 		$data['object'] = 'Kamar';
-		$data['f-css'] = 'kamar';
+		$data['f_css'] = 'kamar';
+        $dataFooter['f_js'] = ['kamar'];
 		$this->load->view('template/header', $data);
 		$this->load->view('kamar/index', $data);
-		$this->load->view('template/footer');
+		$this->load->view('template/footer', $dataFooter);
 	}
 }

@@ -22,6 +22,7 @@ class Beranda extends CI_Controller {
 	public function index()
 	{
 		$data['header'] = 'Beranda';
+		$dataFooter['f_js'] = ["section_best", "section_kamar"];
 		$this->load->model('Fasilitas_model');
 		$this->load->model('Layanan_model');
 		$data['fasilitas'] = $this->Fasilitas_model->get_all();
@@ -29,7 +30,7 @@ class Beranda extends CI_Controller {
 
 		$this->load->view('template/header-beranda', $data);
 		$this->load->view('beranda/index', $data);
-		$this->load->view('template/footer');
+		$this->load->view('template/footer', $dataFooter);
 	}
 
 	public function fasilitas(){
@@ -39,9 +40,10 @@ class Beranda extends CI_Controller {
 
 	public function kritik()
 	{
+		$dataFooter['f_js'] = ['kritik_saran'];
 		$this->load->view('template/header');
 		$this->load->view('kritiksaran/index');
-		$this->load->view('template/footer');
+		$this->load->view('template/footer', $dataFooter);
 	}
 
 	public function simpan_kritik() {
