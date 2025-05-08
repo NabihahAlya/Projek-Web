@@ -10,36 +10,19 @@ class Kamar extends CI_Controller {
     }
     
 	public function index()
-	{
-		$data['data_kamar'] = $this->Kamar_model->get_all_data_kamar();
-		$data['images'] = [];
-		$data['spek'] = [];
+{
+    $data['data_kamar'] = $this->Kamar_model->get_all_data_kamar();
 
-		$fotoData = $this->Kamar_model->get_all_image();
-        foreach ($fotoData as $foto) {
-            if (!isset($data['images'][$foto['type_kamar']])) {
-                $data['images'][$foto['type_kamar']] = [];
-            }
+    // Langsung ambil hasil terstruktur dari model
+    $data['images'] = $this->Kamar_model->get_all_image();
+    $data['spek'] = $this->Kamar_model->get_all_spek();
 
-            $data['images'][$foto['type_kamar']][] = $foto;
-        }
+    $data['object'] = 'Kamar';
+    $data['f_css'] = 'kamar';
+    $dataFooter['f_js'] = ['kamar'];
 
-		$spekData = $this->Kamar_model->get_all_spek();
-        foreach ($spekData as $spek) {
-            // Jika type_kamar belum ada di dalam array, buat array baru
-            if (!isset($data['spek'][$spek['type_kamar']])) {
-                $data['spek'][$spek['type_kamar']] = [];
-            }
-    
-            // Tambahkan foto ke dalam type_kamar yang sesuai
-            $data['spek'][$spek['type_kamar']][] = $spek;
-        }
-
-		$data['object'] = 'Kamar';
-		$data['f_css'] = 'kamar';
-        $dataFooter['f_js'] = ['kamar'];
-		$this->load->view('template/header', $data);
-		$this->load->view('kamar/index', $data);
-		$this->load->view('template/footer', $dataFooter);
-	}
+    $this->load->view('template/header', $data);
+    $this->load->view('kamar/index', $data);
+    $this->load->view('template/footer', $dataFooter);
+}
 }
