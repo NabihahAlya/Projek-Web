@@ -40,8 +40,9 @@ class Beranda extends CI_Controller {
 
 	public function kritik()
 	{
+		$dataHeader['f_css'] = 'kritik-saran';
 		$dataFooter['f_js'] = ['kritik_saran'];
-		$this->load->view('template/header');
+		$this->load->view('template/header', $dataHeader);
 		$this->load->view('kritiksaran/index');
 		$this->load->view('template/footer', $dataFooter);
 	}
