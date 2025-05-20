@@ -7,11 +7,11 @@
 
           <div class="nav col-md-2 col-sm-6 mb-4 mb-md-0">
             <ul class="footer-menu list-unstyled">
-              <li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
+              <li><a href="<?= base_url() ?>">Beranda</a></li>
               <li><a href="<?= base_url('tentang-kami') ?>">Tentang Kami</a></li>
               <li><a href="<?= base_url('kamar') ?>">Kamar </a></li>
-              <li><a href="<?= base_url('beranda/kritik') ?>">Kritik dan Saran</a></li>
-              <li><a href="<?= base_url('auth') ?>">Login</a></li>
+              <li><a href="<?= base_url('kritik') ?>">Kritik dan Saran</a></li>
+              <li><a href="<?= base_url('auth') ?>">Admin</a></li>
             </ul>
           </div>
 

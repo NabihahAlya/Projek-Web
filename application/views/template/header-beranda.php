@@ -59,22 +59,22 @@
     <nav>
     <ul>
         <li class="navi">
-          <a href="<?=base_url('index.php')?>"><i class="fa-solid fa-house"></i>Beranda</a>
+          <a href="<?=base_url()?>"><i class="fa-solid fa-house"></i>Beranda</a>
         </li>
         <li class="navi">
-          <a href="<?=base_url('index.php/tentang-kami')?>"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
+          <a href="<?=base_url('tentang-kami')?>"><i class="fa-solid fa-lightbulb"></i>Tentang Kami</a>
         </li>
         <li class="navi">
-          <a href="<?=base_url('index.php/kamar')?>"><i class="fa-solid fa-hotel"></i>Kamar</a>
+          <a href="<?=base_url('kamar')?>"><i class="fa-solid fa-hotel"></i>Kamar</a>
         </li>
         <li class="navi">
-          <a href="<?=base_url('index.php#fasilitas')?>"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
+          <a href="<?=base_url('fasilitas')?>"><i class="fa-solid fa-concierge-bell"></i>Fasilitas</a>
         </li>
         <li class="navi">
-          <a href="<?=base_url('index.php/wisata')?>"><i class="fas fa-plane"></i>Wisata</a>
+          <a href="<?=base_url('wisata')?>"><i class="fas fa-plane"></i>Wisata</a>
         </li>
         <li class="navi">
-          <a href="<?=base_url('beranda/kritik')?>"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
+          <a href="<?=base_url('kritik')?>"><i class="fa-solid fa-tty"></i>Kritik & Saran</a>
         </li>
       </ul>
     </nav>

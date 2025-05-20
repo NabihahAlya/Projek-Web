@@ -18,7 +18,7 @@
           pengalaman menginap yang istimewa bagi setiap tamu. Berlokasi strategis dekat dengan stasiun kota Malang, hotel ini memudahkan akses ke berbagai kawasan pemerintahan, pusat bisnis, serta destinasi wisata terkenal. Dilengkapi
           dengan fasilitas teknologi terkini, Hotel Helios menjadi pilihan ideal untuk keperluan bisnis maupun liburan yang berkesan.
         </p>
-        <a href="#" class="more">Lainnya</a>
+        <a href="<?= base_url('beranda/tentang') ?>" class="more">Lainnya</a>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@
     </div>
 
     <div class="text-center mt-4">
-      <a href="<?= base_url('kamar')?>" class="btn custom-btn">Lihat Semua Kamar</a>
+      <a href="<?= base_url('beranda/kamar')?>" class="btn custom-btn">Lihat Semua Kamar</a>
     </div>
   </div>
 </section>
@@ -208,7 +208,7 @@
   <div class="daftar-layanan">
     <?php foreach ($layanan as $fas): ?>
     <?php if ($fas['tipe_aksi'] == 'link'): ?>
-      <a href="<?= $fas['link'] ?>" target="_blank" class="layanan-item">
+      <a href="<?= $fas['link'] ?>" target="_self" class="layanan-item">
       <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
       <h3><?= $fas['nama'] ?></h3>
     </a>
@@ -262,7 +262,7 @@
           "Rasakan Keajaiban Bromo, Dapatkan Pengalaman Tak Terlupakan!" <br />Ingin merasakan sensasi matahari terbit di Bromo? Bergabunglah dalam perjalanan penuh petualangan dan nikmati keindahan alam yang memukau. Jangan lewatkan
           kesempatan untuk menjelajahi keajaiban Indonesia!
         </p>
-        <a href="<?= base_url('wisata')?>"
+        <a href="<?= base_url('beranda/wisata')?>"
           <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
         </a>
       </div>
@@ -274,7 +274,7 @@
         <div class="h-90 p-5 text-white bg-dark rounded-3 bg-image-1 animate-slide-right" id="card-left">
           <h2 class="segoe">Explore Tumpak Sewu</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis atque veniam, voluptas nihil ipsam explicabo totam et alias dicta autem animi fugiat laborum minima labore eligendi in? Asperiores, maxime?</p>
-          <a href="<?= base_url('wisata')?>"
+          <a href="<?= base_url('beranda/wisata')?>"
             <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
           </a>
         </div>
@@ -284,7 +284,9 @@
         <div class="h-90 p-5 bg-light border rounded-3 bg-image-2 animate-slide-left" id="card-right">
           <h2 class="segoe">Explore Ijen Blue Fire</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit architecto optio veritatis aut iusto aspernatur expedita quasi illo aliquam incidunt quidem voluptatem reprehenderit ullam ea quia doloribus!</p>
-          <button class="btn btn-sml custom-btn" type="button">Lihat Selengkapnya</button>
+          <a href="<?= base_url('beranda/wisata')?>"
+            <button class="btn btn-lg custom-btn" type="button">Lihat Selengkapnya</button>
+          </a>
         </div>
       </div>
     </div>
