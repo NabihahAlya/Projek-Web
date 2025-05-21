@@ -17,8 +17,7 @@
 }
     ?>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/logo.png') ?>" />
+    <link rel="icon" href="<?= base_url('assets/img/logo.png') ?>" />
     <script>const baseUrl = "<?= base_url() ?>"; </script>
   </head>
   <body>

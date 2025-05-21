@@ -12,9 +12,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/section_kamar.css'); ?>"/>
     <link rel="stylesheet" href="<?= base_url('assets/css/section_best.css'); ?>"/>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('assets/img/logo.png') ?>" />
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= base_url('assets/img/logo.png') ?>" />
-
+    <link rel="icon"  href="<?= base_url('assets/img/logo.png') ?>" />
     <script>const baseUrl = "http://localhost/helioshotel/";</script>
   </head>
   <body>

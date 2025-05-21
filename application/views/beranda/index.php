@@ -164,9 +164,9 @@
     <?php foreach ($fasilitas as $fas): ?>
     <?php if ($fas['tipe_aksi'] == 'link'): ?>
       <a href="<?= $fas['link'] ?>" target="_blank" class="fasilitas-item">
-      <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
-      <h3><?= $fas['nama'] ?></h3>
-    </a>
+        <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
+        <h3><?= $fas['nama'] ?></h3>
+      </a>
    <?php else: ?>
     <div class="fasilitas-item" onclick="openPopup('popup<?= $fas['id_fasilitas'] ?>')">
       <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
@@ -209,9 +209,9 @@
     <?php foreach ($layanan as $fas): ?>
     <?php if ($fas['tipe_aksi'] == 'link'): ?>
       <a href="<?= $fas['link'] ?>" target="_self" class="layanan-item">
-      <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
-      <h3><?= $fas['nama'] ?></h3>
-    </a>
+        <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
+        <h3><?= $fas['nama'] ?></h3>
+      </a>
    <?php else: ?>
     <div class="layanan-item" onclick="openPopup('popup<?= $fas['id_layanan'] ?>')">
       <i class="fas <?= $fas['ikon'] ?> fa-3x "></i>
@@ -298,66 +298,63 @@
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-    // Only run on mobile screens
-    if (window.innerWidth <= 768) {
-      const cardRow = document.querySelector('.section-best .row.align-items-md-stretch');
-      const scrollLeftBtn = document.querySelector('.scroll-btn.scroll-left');
-      const scrollRightBtn = document.querySelector('.scroll-btn.scroll-right');
-      const buttonContainer = document.querySelector('.card-scroll-buttons');
-      
-      // Show scroll buttons container on mobile
-      buttonContainer.style.display = 'flex';
-      
-      // Initial check for scroll position
-      updateScrollButtonVisibility();
-      
-      // Function to update the visibility of scroll buttons
-      function updateScrollButtonVisibility() {
-        // Hide left button if at the beginning
-        if (cardRow.scrollLeft <= 10) {
-          scrollLeftBtn.classList.add('hidden');
-        } else {
-          scrollLeftBtn.classList.remove('hidden');
+      // Only run on mobile screens
+      if (window.innerWidth <= 768) {
+        const cardRow = document.querySelector('.section-best .row.align-items-md-stretch');
+        const scrollLeftBtn = document.querySelector('.scroll-btn.scroll-left');
+        const scrollRightBtn = document.querySelector('.scroll-btn.scroll-right');
+        const buttonContainer = document.querySelector('.card-scroll-buttons');
+        buttonContainer.style.display = 'flex';
+        // Initial check for scroll position
+        updateScrollButtonVisibility();
+        
+        // Function to update the visibility of scroll buttons
+        function updateScrollButtonVisibility() {
+          // Hide left button if at the beginning
+          if (cardRow.scrollLeft <= 10) {
+            scrollLeftBtn.classList.add('hidden');
+          } else {
+            scrollLeftBtn.classList.remove('hidden');
+          }
+          
+          // Hide right button if at the end
+          const maxScrollLeft = cardRow.scrollWidth - cardRow.clientWidth - 10;
+          if (cardRow.scrollLeft >= maxScrollLeft) {
+            scrollRightBtn.classList.add('hidden');
+          } else {
+            scrollRightBtn.classList.remove('hidden');
+          }
+          
+          // Hide entire button container if there's nothing to scroll
+          if (cardRow.scrollWidth <= cardRow.clientWidth) {
+            buttonContainer.style.display = 'none';
+          } else {
+            buttonContainer.style.display = 'flex';
+          }
         }
         
-        // Hide right button if at the end
-        const maxScrollLeft = cardRow.scrollWidth - cardRow.clientWidth - 10;
-        if (cardRow.scrollLeft >= maxScrollLeft) {
-          scrollRightBtn.classList.add('hidden');
-        } else {
-          scrollRightBtn.classList.remove('hidden');
-        }
+        // Scroll left when left button is clicked
+        scrollLeftBtn.addEventListener('click', function() {
+          cardRow.scrollBy({
+            left: -cardRow.offsetWidth * 0.85,
+            behavior: 'smooth'
+          });
+        });
         
-        // Hide entire button container if there's nothing to scroll
-        if (cardRow.scrollWidth <= cardRow.clientWidth) {
-          buttonContainer.style.display = 'none';
-        } else {
-          buttonContainer.style.display = 'flex';
-        }
+        // Scroll right when right button is clicked
+        scrollRightBtn.addEventListener('click', function() {
+          cardRow.scrollBy({
+            left: cardRow.offsetWidth * 0.85,
+            behavior: 'smooth'
+          });
+        });
+        
+        // Update button visibility when scrolling
+        cardRow.addEventListener('scroll', updateScrollButtonVisibility);
+        
+        // Update on window resize as well
+        window.addEventListener('resize', updateScrollButtonVisibility);
       }
-      
-      // Scroll left when left button is clicked
-      scrollLeftBtn.addEventListener('click', function() {
-        cardRow.scrollBy({
-          left: -cardRow.offsetWidth * 0.85,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Scroll right when right button is clicked
-      scrollRightBtn.addEventListener('click', function() {
-        cardRow.scrollBy({
-          left: cardRow.offsetWidth * 0.85,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Update button visibility when scrolling
-      cardRow.addEventListener('scroll', updateScrollButtonVisibility);
-      
-      // Update on window resize as well
-      window.addEventListener('resize', updateScrollButtonVisibility);
-    }
-  });
+    });
   </script>
 </section>
